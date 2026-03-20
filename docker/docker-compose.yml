@@ -1,0 +1,17 @@
+services:
+  automation:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: automation
+    ipc: host
+    init: true
+    volumes:
+      - ../src:/app/src
+      - ../tests:/app/tests
+    env_file:
+      - ../.env
+    tty: true
+    stdin_open: true
+    command: tail -f /dev/null
+      
