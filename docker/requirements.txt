@@ -13,3 +13,7 @@ loguru
 
 # --- 追加：Google AI (Gemini) ---
 google-generativeai
+#テキスト抽出
+trafilatura
+readability-lxml
+markdownify

@@ -1,1 +1,0 @@
-print('docker build -t automation ..')
