@@ -1,0 +1,95 @@
+date,keyword,article_title,file_path,importance,source,title
+2026-05-22,IT,,/app/src/data/nikkei_xtech/20260522/IT/article_11757.md,4,nikkei_xtech,IT大手、地銀にセキュリティー総合サービス相次ぎ提供　Mythosで高まる需要 | 日経クロステック（xTECH）
+2026-05-22,IT,,/app/src/data/nikkei_xtech/20260522/IT/article_052000208.md,3,nikkei_xtech,人の心が分かるAIと分からない計算機、異物同士が同居するメリット（3ページ目） | 日経クロステック（xTECH）
+2026-05-22,IT,,/app/src/data/nikkei_xtech/20260522/IT/article_052000005.md,3,nikkei_xtech,生成AIの相次ぐ料金体系変更は実質値上げか、エージェント利用企業に負担増 | 日経クロステック（xTECH）
+2026-05-22,IT,,/app/src/data/nikkei_xtech/20260522/IT/article_051800016.md,2,nikkei_xtech,「ビジネス理解を深めよ」と言われスベりまくる、足手まといになる前にやるべき3つの行動（2ページ目） | 日経クロステック（xTECH）
+2026-05-22,IT,,/app/src/data/nikkei_xtech/20260522/IT/article_051500252.md,4,nikkei_xtech,携帯大手3社がAI事業へ傾倒、国内携帯電話産業の衰退につながらないか（3ページ目） | 日経クロステック（xTECH）
+2026-05-22,IT,,/app/src/data/nikkei_xtech/20260522/IT/article_051100315.md,4,nikkei_xtech,ダイナミックオントロジー、データに意味を与えて柔軟に結び付ける（2ページ目） | 日経クロステック（xTECH）
+2026-05-22,IT,,/app/src/data/nikkei_xtech/20260522/IT/article_042700009.md,2,nikkei_xtech,設計の検証に向くネットワーク図を描くコツ　物理構成図に論理構成を合成（4ページ目） | 日経クロステック（xTECH）
+2026-05-22,IT,,/app/src/data/nikkei_xtech/20260522/IT/article_041400012.md,2,nikkei_xtech,Deep Researchを試す、長文のリポート作成ならGeminiがお薦め（2ページ目） | 日経クロステック（xTECH）
+2026-05-21,IT,,/app/src/data/nikkei_xtech/20260521/IT/article_051500217.md,3,nikkei_xtech,システム部門にアーキテクトを　エンタープライズ再設計に必要 | 日経クロステック（xTECH）
+2026-05-21,IT,,/app/src/data/nikkei_xtech/20260521/IT/article_051500004.md,2,nikkei_xtech,One Teamでのデータ活用を立ち塞がる壁を乗り越えろ | 日経クロステック（xTECH）
+2026-05-21,IT,,/app/src/data/nikkei_xtech/20260521/IT/article_051500001.md,4,nikkei_xtech,開発プロセスをAI前提で再設計　「内製化地図」7段階を押さえる | 日経クロステック（xTECH）
+2026-05-21,IT,,/app/src/data/nikkei_xtech/20260521/IT/article_051500200.md,3,nikkei_xtech,設計はあなたがすること、AIにはできない（3ページ目） | 日経クロステック（xTECH）
+2026-05-21,IT,,/app/src/data/nikkei_xtech/20260521/IT/article_051400007.md,4,nikkei_xtech,SBI新生銀は「AWSファースト」、約3年で障害半減　鍵は共通基盤の整備 | 日経クロステック（xTECH）
+2026-05-21,IT,,/app/src/data/nikkei_xtech/20260521/IT/article_050700026.md,3,nikkei_xtech,製造業におけるAI活用拡大の鍵、部門間をつなぐ橋渡し役（2ページ目） | 日経クロステック（xTECH）
+2026-05-21,IT,,/app/src/data/nikkei_xtech/20260521/IT/article_042700008.md,2,nikkei_xtech,良い物理構成図を描くコツ　ラックやフロアごとに標準的な構成を設計（3ページ目） | 日経クロステック（xTECH）
+2026-05-21,IT,,/app/src/data/nikkei_xtech/20260521/IT/article_041400011.md,3,nikkei_xtech,紙の資料をChatGPTで分析、表をExcelに変換　利用制限に注意（2ページ目） | 日経クロステック（xTECH）
+2026-05-20,IT,,/app/src/data/nikkei_xtech/20260520/IT/article_051900004.md,4,nikkei_xtech,サーバーもルーターも値上げラッシュ、納期に大幅乱れ　半導体高騰が波及 | 日経クロステック（xTECH）
+2026-05-20,IT,,/app/src/data/nikkei_xtech/20260520/IT/article_00420.md,3,nikkei_xtech,56歳ITエンジニア、30歳代若手と同じ「7万円」の昇給額に納得いかない（2ページ目） | 日経クロステック（xTECH）
+2026-05-20,IT,,/app/src/data/nikkei_xtech/20260520/IT/article_042700007.md,2,nikkei_xtech,良い論理構成図を描くコツ　セグメントを太線で表し、ノードを細線でつなぐ（4ページ目） | 日経クロステック（xTECH）
+2026-05-20,IT,,/app/src/data/nikkei_xtech/20260520/IT/article_041400010.md,3,nikkei_xtech,Excel VBAも生成AIの得意分野、知識ゼロでシート結合を自動化（4ページ目） | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_03238.md,4,nikkei_xtech,AIエージェントが10分で脅威特定、NTTドコモビジネスが新提供 | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_052000177.md,3,nikkei_xtech,「FDE」新会社、PEと組む怖い意味　アンソロピックとオープンAI | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_051500186.md,3,nikkei_xtech,Mythosの「脆弱性の嵐」に備えよ　専門家250人が対策を提言 | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_051500138.md,2,nikkei_xtech,プログラミング言語は絶滅　AIしかコードを書かなくなる未来 | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_052100037.md,4,nikkei_xtech,ソブリンAIがなければ「デジタル属国」、MistralのCEOがフランス国会で警告（2ページ目） | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_052000008.md,3,nikkei_xtech,人型ロボが「走る・闘う・ダンスする」、Unitree G1を動作デモ展示 | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_11757.md,4,nikkei_xtech,IT大手、地銀にセキュリティー総合サービス相次ぎ提供　Mythosで高まる需要 | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_052000088.md,3,nikkei_xtech,溶かすべきは「金融」と「金融」の壁 | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_052000208.md,3,nikkei_xtech,人の心が分かるAIと分からない計算機、異物同士が同居するメリット（3ページ目） | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_052000072.md,4,nikkei_xtech,バイドゥ、OpenClawエコシステムを家庭でも　開発料金は月230円から（2ページ目） | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_052000087.md,2,nikkei_xtech,AIデータセンターはどこにある、お薦め情報サイト2件 | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_052000005.md,3,nikkei_xtech,生成AIの相次ぐ料金体系変更は実質値上げか、エージェント利用企業に負担増 | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_051800016.md,2,nikkei_xtech,「ビジネス理解を深めよ」と言われスベりまくる、足手まといになる前にやるべき3つの行動（2ページ目） | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_051500252.md,4,nikkei_xtech,携帯大手3社がAI事業へ傾倒、国内携帯電話産業の衰退につながらないか（3ページ目） | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_051500041.md,4,nikkei_xtech,M＆A成功例のリガクHD、研究開発力が高評価（2ページ目） | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_051500058.md,4,nikkei_xtech,AIを使いこなすために「疑う力」を身に付ける、AI回答の真偽を見抜け（2ページ目） | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_051300018.md,4,nikkei_xtech,車の「2大頭脳」SoC統合、DRAM高騰が背景　中国ホライズン容量4割減 | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_051200380.md,2,nikkei_xtech,3位は「『ベランダソーラー』に脚光、コンセントに差し込み置くだけ」60代以上の注目トップ10 | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_051100315.md,4,nikkei_xtech,ダイナミックオントロジー、データに意味を与えて柔軟に結び付ける（2ページ目） | 日経クロステック（xTECH）
+2026-05-22,AI,,/app/src/data/nikkei_xtech/20260522/AI/article_041400012.md,2,nikkei_xtech,Deep Researchを試す、長文のリポート作成ならGeminiがお薦め（2ページ目） | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_11760.md,4,nikkei_xtech,GoogleピチャイCEO「需要が多様化」　巨額投資に自信、26年に最大30兆円 | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_03236.md,3,nikkei_xtech,AI電話応対支援のIVRy、メガバンク3行から45億円を調達 | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_051500004.md,2,nikkei_xtech,One Teamでのデータ活用を立ち塞がる壁を乗り越えろ | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_051500001.md,4,nikkei_xtech,開発プロセスをAI前提で再設計　「内製化地図」7段階を押さえる | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_051900086.md,2,nikkei_xtech,「ホンダ超え」見えたスズキ、eビターラは欧州で売れるか | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_051800013.md,3,nikkei_xtech,Transformer、強さの正体は「簡潔さ」　ICLR 2026の有力論文を一挙深掘り | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_11748.md,3,nikkei_xtech,GMOあおぞらネット銀が電話サポートを24時間に、「AIオペレーター」を活用 | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_051500200.md,3,nikkei_xtech,設計はあなたがすること、AIにはできない（3ページ目） | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_02636.md,3,nikkei_xtech,バス専用道で自動運転、国内最速の時速60km　JR東日本 | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_051200379.md,3,nikkei_xtech,4位は「乱立『Pay』に異変　ゆうちょ銀は撤退しJR東西が参入、地歩固めるPayPay」50代の注目トップ10 | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_03224.md,3,nikkei_xtech,横浜ゴム、AIとFEMでタイヤの金型設計を効率化 | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_050800007.md,4,nikkei_xtech,BMWの自動化は第4段階へ、「人型ロボは既にクルマ3万台の製造に活用」 | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_050700026.md,3,nikkei_xtech,製造業におけるAI活用拡大の鍵、部門間をつなぐ橋渡し役（2ページ目） | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_042800004.md,2,nikkei_xtech,何歳の子どもから生成AIを使わせてもいい？（2ページ目） | 日経クロステック（xTECH）
+2026-05-21,AI,,/app/src/data/nikkei_xtech/20260521/AI/article_041400011.md,3,nikkei_xtech,紙の資料をChatGPTで分析、表をExcelに変換　利用制限に注意（2ページ目） | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_11755.md,4,nikkei_xtech,GoogleピチャイCEO「AIエージェントを個人に」、新機能Sparkは総合力に活路 | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_051900004.md,4,nikkei_xtech,サーバーもルーターも値上げラッシュ、納期に大幅乱れ　半導体高騰が波及 | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_051800244.md,3,nikkei_xtech,携帯料金の値上げ効果は絶大、苦境のドコモをよそにソフトバンクが投資拡大 | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_11749.md,4,nikkei_xtech,KDDIが新たな中期経営戦略、AI基盤やグロース領域に計2兆円超の投資へ | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_051300012.md,3,nikkei_xtech,メモリー消費抑えるLLM量子化の研究盛んに、「ICLR」の論文で探る最新動向 | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_051302017.md,3,nikkei_xtech,ハノーバーメッセ熱狂、元サッカー独代表ラーム氏が語るデータと直感（2ページ目） | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_051200378.md,2,nikkei_xtech,2位は「激動の情報処理技術者試験、新応用・高度合格者だけが受けられる論述試験も」40代の注目トップ10 | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_050800008.md,4,nikkei_xtech,独シェフラー、人型ロボットにシフト　部品供給と工場導入の好循環で覇権へ | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_11712.md,4,nikkei_xtech,AppleやNVIDIAも頼る　サイタイム、驚きのMEMSタイミング部品構造 | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_042800003.md,2,nikkei_xtech,ロジカル・シンキングを身に付けるには、結論を先に話す習慣を（2ページ目） | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_042700033.md,4,nikkei_xtech,「使った分だけ払う」が変えるものづくりのマインドセット、慶応・白坂教授（2ページ目） | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_041400010.md,3,nikkei_xtech,Excel VBAも生成AIの得意分野、知識ゼロでシート結合を自動化（4ページ目） | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_040800007.md,2,nikkei_xtech,AirPods Pro 3のほぼ半額で買えるVictor HA-A110T、LDACなら評価は逆転（2ページ目） | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_030600001.md,4,nikkei_xtech,日本がロボットで米中に勝つための4つの秘策（3ページ目） | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_051300310.md,4,nikkei_xtech,読者から | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_051100001.md,4,nikkei_xtech,総額20兆円強の国土強靱化始まる、成長戦略で防災技術の開発に拍車 | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_051300115.md,1,nikkei_xtech,建設の発想の転換、HAL9000は認める？ | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_051300309.md,2,nikkei_xtech,催し物案内 | 日経クロステック（xTECH）
+2026-05-20,AI,,/app/src/data/nikkei_xtech/20260520/AI/article_051300463.md,2,nikkei_xtech,チャット履歴を基にAIが質問に回答 | 日経クロステック（xTECH）
+2026-05-22,Sier,,/app/src/data/nikkei_xtech/20260522/Sier/article_051800016.md,2,nikkei_xtech,「ビジネス理解を深めよ」と言われスベりまくる、足手まといになる前にやるべき3つの行動（2ページ目） | 日経クロステック（xTECH）
+2026-05-21,Sier,,/app/src/data/nikkei_xtech/20260521/Sier/article_051200379.md,3,nikkei_xtech,4位は「乱立『Pay』に異変　ゆうちょ銀は撤退しJR東西が参入、地歩固めるPayPay」50代の注目トップ10 | 日経クロステック（xTECH）
+2026-05-20,Sier,,/app/src/data/nikkei_xtech/20260520/Sier/article_051900004.md,4,nikkei_xtech,サーバーもルーターも値上げラッシュ、納期に大幅乱れ　半導体高騰が波及 | 日経クロステック（xTECH）
+2026-05-20,Sier,,/app/src/data/nikkei_xtech/20260520/Sier/article_051200378.md,2,nikkei_xtech,2位は「激動の情報処理技術者試験、新応用・高度合格者だけが受けられる論述試験も」40代の注目トップ10 | 日経クロステック（xTECH）
+2026-05-22,日立,,/app/src/data/nikkei_xtech/20260522/日立/article_051200380.md,2,nikkei_xtech,3位は「『ベランダソーラー』に脚光、コンセントに差し込み置くだけ」60代以上の注目トップ10 | 日経クロステック（xTECH）
+2026-05-21,日立,,/app/src/data/nikkei_xtech/20260521/日立/article_051200379.md,3,nikkei_xtech,4位は「乱立『Pay』に異変　ゆうちょ銀は撤退しJR東西が参入、地歩固めるPayPay」50代の注目トップ10 | 日経クロステック（xTECH）
+2026-05-20,日立,,/app/src/data/nikkei_xtech/20260520/日立/article_051200378.md,2,nikkei_xtech,2位は「激動の情報処理技術者試験、新応用・高度合格者だけが受けられる論述試験も」40代の注目トップ10 | 日経クロステック（xTECH）
+2026-05-22,DX,,/app/src/data/nikkei_xtech/20260522/DX/article_052000008.md,3,nikkei_xtech,人型ロボが「走る・闘う・ダンスする」、Unitree G1を動作デモ展示 | 日経クロステック（xTECH）
+2026-05-22,DX,,/app/src/data/nikkei_xtech/20260522/DX/article_11757.md,4,nikkei_xtech,IT大手、地銀にセキュリティー総合サービス相次ぎ提供　Mythosで高まる需要 | 日経クロステック（xTECH）
+2026-05-22,DX,,/app/src/data/nikkei_xtech/20260522/DX/article_052000088.md,3,nikkei_xtech,溶かすべきは「金融」と「金融」の壁 | 日経クロステック（xTECH）
+2026-05-22,DX,,/app/src/data/nikkei_xtech/20260522/DX/article_051200380.md,2,nikkei_xtech,3位は「『ベランダソーラー』に脚光、コンセントに差し込み置くだけ」60代以上の注目トップ10 | 日経クロステック（xTECH）
+2026-05-21,DX,,/app/src/data/nikkei_xtech/20260521/DX/article_051500001.md,4,nikkei_xtech,開発プロセスをAI前提で再設計　「内製化地図」7段階を押さえる | 日経クロステック（xTECH）
+2026-05-21,DX,,/app/src/data/nikkei_xtech/20260521/DX/article_051200379.md,3,nikkei_xtech,4位は「乱立『Pay』に異変　ゆうちょ銀は撤退しJR東西が参入、地歩固めるPayPay」50代の注目トップ10 | 日経クロステック（xTECH）
+2026-05-21,DX,,/app/src/data/nikkei_xtech/20260521/DX/article_042800004.md,2,nikkei_xtech,何歳の子どもから生成AIを使わせてもいい？（2ページ目） | 日経クロステック（xTECH）
+2026-05-20,DX,,/app/src/data/nikkei_xtech/20260520/DX/article_051800244.md,3,nikkei_xtech,携帯料金の値上げ効果は絶大、苦境のドコモをよそにソフトバンクが投資拡大 | 日経クロステック（xTECH）
+2026-05-20,DX,,/app/src/data/nikkei_xtech/20260520/DX/article_051302017.md,3,nikkei_xtech,ハノーバーメッセ熱狂、元サッカー独代表ラーム氏が語るデータと直感（2ページ目） | 日経クロステック（xTECH）
+2026-05-20,DX,,/app/src/data/nikkei_xtech/20260520/DX/article_051200378.md,2,nikkei_xtech,2位は「激動の情報処理技術者試験、新応用・高度合格者だけが受けられる論述試験も」40代の注目トップ10 | 日経クロステック（xTECH）
+2026-05-20,DX,,/app/src/data/nikkei_xtech/20260520/DX/article_042800003.md,2,nikkei_xtech,ロジカル・シンキングを身に付けるには、結論を先に話す習慣を（2ページ目） | 日経クロステック（xTECH）
+2026-05-20,DX,,/app/src/data/nikkei_xtech/20260520/DX/article_051300309.md,2,nikkei_xtech,催し物案内 | 日経クロステック（xTECH）
+2026-05-20,DX,,/app/src/data/nikkei_xtech/20260520/DX/article_051200014.md,3,nikkei_xtech,予防保全が安価な延命化策、劣化グレードに応じた対策が必要 | 日経クロステック（xTECH）

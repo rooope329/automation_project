@@ -1,19 +1,21 @@
 # --- 既存のライブラリ ---
 playwright==1.58.0
-playwright-stealth
-requests
-beautifulsoup4
-lxml
-pandas
-openpyxl
-pytest
-pytest-playwright
-python-dotenv
-loguru
+playwright-stealth==2.0.3
+requests==2.33.1
+beautifulsoup4==4.14.3
+lxml==6.1.0
+pandas==3.0.2
+openpyxl==3.1.5
+pytest==9.0.3
+pytest-playwright==0.7.2
+python-dotenv==1.2.2
+loguru==0.7.3
 
-# --- 追加：Google AI (Gemini) ---
-google-generativeai
-#テキスト抽出
-trafilatura
-readability-lxml
-markdownify
+# --- テキスト抽出 ---
+trafilatura==2.0.0
+readability-lxml==0.8.4.1
+markdownify==1.2.2
+
+# --- LangChain関連 ---
+langchain-core==0.3.47
+langchain-groq==0.3.1

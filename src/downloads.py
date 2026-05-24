@@ -2,13 +2,19 @@ import os
 import re
 import time
 import requests
+import bs4
 from datetime import datetime, timedelta
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
+from src.consts import DOWNLOAD_URL
+from src.consts import MAX_RETRIES
+from src.consts import RETRY_INTERVAL
+from src.consts import NIKKEI
+
+
 from readability import Document
 from markdownify import markdownify
 from playwright.sync_api import sync_playwright
-import time
 
 def get_session(p):
     """起動済みのDockerブラウザに接続し、新しいページセッションを返す"""
@@ -26,7 +32,7 @@ def get_session(p):
 def login(page):
     """日経クロステックへのログイン処理"""
     try:
-        page.goto("https://xtech.nikkei.com/")
+        page.goto(DOWNLOAD_URL, wait_until='domcontentloaded', timeout=20000)
     except Exception as e:
         raise Exception(f"ページの読み込みに失敗しました: {e}")
 
@@ -129,22 +135,41 @@ def download_article_content(context, target, page_num, article_num, keyword):
     try:
         new_tab.goto(url, wait_until='domcontentloaded', timeout=20000)
         new_tab.wait_for_timeout(1000)
-        
-        # HTMLの整形
-        soup = BeautifulSoup(new_tab.content(), 'html.parser')
-        for target_div in soup.find_all('div', class_=re.compile(r'bpbox_center|bpimage_center|bpimage_image')):
-            target_div.name = 'figure'
-        
-        # Markdownへの変換
-        doc = Document(str(soup))
-        title = doc.title()
-        summary = doc.summary()
-        
-        if not summary or len(summary) < 20:
-            print(f"❌ 記事{article_num} の本文抽出に失敗したためスキップします。")
-            return None
 
-        full_markdown_content = f"# {title}\n\n{markdownify(summary)}"
+        # javascriptを使用し、不必要なタグ部分を削除してhtmlコンテンツ取得
+        '''javascriptを使用し、不必要なタブを削除'''
+        new_tab.evaluate("""() => {
+            document.querySelectorAll('.article_ad').forEach(el => el.remove());
+            document.querySelectorAll('div[id^="div-gpt-ad-"]').forEach(el => el.remove());
+            
+            document.querySelectorAll('a[href^="/search/?KEYWORD="]').forEach(el => {
+                const parentUl = el.closest('ul');
+                if (parentUl) parentUl.remove();
+            });
+            document.querySelectorAll('.c-btn.-full.article_navigation_mokujiBtn').forEach(el => el.remove());
+            document.querySelectorAll('div.bpimage_click').forEach(el => el.remove());
+            document.querySelectorAll('section.article_nextPage').forEach(el => el.remove());
+        }""")
+        
+        #タイトル取得
+        article_title = new_tab.locator('title').inner_text().strip()
+        #本文取得
+        summary = new_tab.locator('div.articleBody.article_body').inner_html()
+        summary_text = summary_text = new_tab.locator('div.articleBody.article_body').inner_text().strip()
+
+        # Markdownへの変換
+        # summary = doc.summary()
+        if not summary or len(summary_text) < 20:
+            print(f" 記事{article_num} の次のタブの本文抽出に失敗したためスキップします。")
+            return None
+        
+        #次タブ部分の混入を防ぐ
+        cleaned_summary_html = BeautifulSoup(summary, 'html.parser')
+        for target_div in cleaned_summary_html.select('div.article_navigation'):
+            target_div.decompose()
+
+        clean_summary = str(cleaned_summary_html)
+        full_markdown_content = f"# {article_title}\n\n{markdownify(clean_summary)}"
         
         #　次のタブがある場合の処理
         '''
@@ -152,6 +177,8 @@ def download_article_content(context, target, page_num, article_num, keyword):
           「記事が読める場合は、記事の内容をMarkdown形式で保存する」処理を実装
           「記事が読めない場合（有料記事）は、スキップする」処理を実装
         '''
+        #　ページ数
+        tabpage_num = 1
         next_tab = new_tab.locator("li.pagination_list_item.-current + li.pagination_list_item a")
         #　ページ数
         tabpage_num = 1
@@ -168,22 +195,42 @@ def download_article_content(context, target, page_num, article_num, keyword):
             else:
                 # HTMLの整形
                 print(f"記事{article_num} の次のタブは無料記事です。保存します。")
-                content = new_tab.content()
-                soup = BeautifulSoup(content, 'html.parser')
-                for target_div in soup.find_all('div', class_=re.compile(r'bpbox_center|bpimage_center|bpimage_image')):
-                    target_div.name = 'figure'
-                # Markdownへの変換
-                doc = Document(str(soup))
-                summary = doc.summary()
+                # content = new_tab.content()
+                # soup = BeautifulSoup(content, 'html.parser')
+                '''javascriptを使用し、不必要なタブを削除'''
+                new_tab.evaluate("""() => {
+            document.querySelectorAll('.article_ad').forEach(el => el.remove());
+            document.querySelectorAll('div[id^="div-gpt-ad-"]').forEach(el => el.remove());
+            
+            document.querySelectorAll('a[href^="/search/?KEYWORD="]').forEach(el => {
+                const parentUl = el.closest('ul');
+                if (parentUl) parentUl.remove();
+            });
+            document.querySelectorAll('.c-btn.-full.article_navigation_mokujiBtn').forEach(el => el.remove());
+            document.querySelectorAll('div.bpimage_click').forEach(el => el.remove());
+            document.querySelectorAll('section.article_nextPage').forEach(el => el.remove());
+        }""")
+                #タイトル取得
+                article_title = new_tab.locator('title').inner_text().strip()
+                #本文取得
+                summary = new_tab.locator('div.articleBody.article_body').inner_html()
+                summary_text = summary_text = new_tab.locator('div.articleBody.article_body').inner_text().strip()
                 if not summary or len(summary) < 20:
-                    print(f"❌ 記事{article_num} の次のタブの本文抽出に失敗したためスキップします。")
+                    print(f" 記事{article_num} の次のタブの本文抽出に失敗したためスキップします。")
                     break
                 tabpage_num += 1
-                full_markdown_content += f"\n\n## {tabpage_num}ページ目\n\n{markdownify(summary)}"
+                #次タブ部分の混入を防ぐ
+                cleaned_summary_html = BeautifulSoup(summary, 'html.parser')
+                for target_div in cleaned_summary_html.select('div.article_navigation'):
+                    target_div.decompose()
+
+                clean_summary = str(cleaned_summary_html)
+                full_markdown_content += f"\n\n## {tabpage_num}ページ目\n\n{markdownify(clean_summary)}"
 
         # 保存先ディレクトリを作成し、書き込み
         os.makedirs(output_dir, exist_ok=True)
-        article_path = os.path.join(output_dir, f'article_{article_num}.md')
+        article_id = url.split('/')[-2]
+        article_path = os.path.join(output_dir, f'article_{article_id}.md')
         
         with open(article_path, 'w', encoding='utf-8') as f:
             f.write(full_markdown_content)
@@ -193,11 +240,13 @@ def download_article_content(context, target, page_num, article_num, keyword):
             'page_num': page_num,
             'date': article_date,
             'article_num': article_num,
-            'article_path': article_path
+            'article_path': article_path,
+            'article_title': article_title,
+            'search_kind': NIKKEI
         }
         
     except Exception as e:
-        print(f"❌ 記事{article_num} ({url}) の保存に失敗しました: {e}")
+        print(f" 記事{article_num}: ({url}) の保存に失敗しました: {e}")
         return None
         
     finally:
@@ -226,9 +275,8 @@ def process_single_page(page, target_dates, base_output_path, page_num, keyword)
 
 def download(target_dates, output_path):
     """メインの巡回・ダウンロードフロー"""
-    os.makedirs(output_path, exist_ok=True)
     downloads_path_list = []
-
+    nikkei_output_path = os.path.join(output_path, NIKKEI)
     with sync_playwright() as p:
         page = get_session(p)
         
@@ -252,8 +300,8 @@ def download(target_dates, output_path):
                 print(f"{keyword} のダウンロード中：{page_num}/{total_pages}")
                 page.wait_for_timeout(1000)
                 
-                # ここで統合された process_single_page を呼び出す
-                page, paths, should_break = process_single_page(page, target_dates, output_path, page_num, keyword)
+                # 各ページごとに、downloads処理を実施
+                page, paths, should_break = process_single_page(page, target_dates, nikkei_output_path, page_num, keyword)
                 downloads_path_list.extend(paths)
                 
                 if should_break:
@@ -272,9 +320,9 @@ def download(target_dates, output_path):
     print(" すべてのダウンロード処理が完了しました。")
     return downloads_path_list
 
-def main(target_dates, output_path):
-    max_retries = 3
-    retry_interval = 5
+def download_main(target_dates, output_path):
+    max_retries = MAX_RETRIES
+    retry_interval = RETRY_INTERVAL
     
     for attempt in range(max_retries):
         try:
@@ -286,4 +334,4 @@ def main(target_dates, output_path):
                 time.sleep(retry_interval)
             else:
                 print(" 全ての再試行に失敗しました。")
-                raise
+                raise Exception(f"ダウンロード処理に失敗しました") from e
