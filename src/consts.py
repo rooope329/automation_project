@@ -5,7 +5,7 @@ BASE_OUTPUT_PATH = os.path.join(dir_path, "data")
 CSV_OUTPUT_PATH = os.path.join(BASE_OUTPUT_PATH, "weekly_trends.csv")
 MAX_RETRIES = 3
 RETRY_INTERVAL = 5  # seconds
-NIKKEI = "nikkei_xtech"
+NIKKEI = "日経xTECH"
 
 
 SYSTEM_PROMPT_TEMPLATE = """あなたはニュース記事の専門アナリストです。

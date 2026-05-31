@@ -4,6 +4,8 @@ from langchain_groq import ChatGroq
 from langchain_core.output_parsers import JsonOutputParser
 from dotenv import load_dotenv
 import time
+from pathlib import Path
+import os
 
 #変数のインポート
 from src.consts import USER_PROMOT_TEMPLATE
@@ -74,13 +76,30 @@ def llm_process(groq_llama_scout, news_path):
         print(f"レビューのリクエストに失敗しました: {e}")
         return None
 
+def give_importance(news_path, importance):
+    '''ファイルパスに重要度を追加する関数'''
+    path_obj = Path(news_path)
+    importnce = importance if importance is not None else "0"
 
-def llm_review(deepcopy_downloads_path):
+    # 重要度を追加したパス名を作成
+    parent_dir = path_obj.parent
+    old_file_name = path_obj.name
+    new_file_name = f"{importnce}_{old_file_name}"
+    new_path = parent_dir / new_file_name
+    # ファイル名を変更
+    try:
+        os.rename(news_path, new_path)
+        print(f"ファイル名を変更しました: {new_path}")
+    except Exception as e:
+        print(f"ファイル名の変更に失敗しました: {e}")
+
+
+def llm_review(downloads_path):
     try:
         #Groqのインスタンスを作成
         groq_llama_scout = Groq_Llama_Scout()
         #ニュースをループしてレビューを依頼
-        for news_dict in deepcopy_downloads_path:
+        for news_dict in downloads_path:
             news_path = news_dict["article_path"]
             review_result = llm_process(groq_llama_scout, news_path)
             if review_result is None:
@@ -90,7 +109,9 @@ def llm_review(deepcopy_downloads_path):
             # レビュー結果に基づいて削除対象を判定
             # 元のdictに、is_errorとimportantの情報を追加
             news_dict["importance"] = review_result.get("important", "0")
-        return deepcopy_downloads_path
+            # ファイルパスに重要度を追加
+            give_importance(news_path, news_dict["importance"])
+        return downloads_path
     except Exception as e:
         raise Exception(f"llm処理に失敗しました")
         

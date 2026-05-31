@@ -3,6 +3,8 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
+    environment:
+      - PYTHONPATH=/app
     container_name: automation
     ipc: host
     init: true

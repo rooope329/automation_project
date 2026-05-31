@@ -210,8 +210,6 @@ def download_article_content(context, target, page_num, article_num, keyword):
             document.querySelectorAll('div.bpimage_click').forEach(el => el.remove());
             document.querySelectorAll('section.article_nextPage').forEach(el => el.remove());
         }""")
-                #タイトル取得
-                article_title = new_tab.locator('title').inner_text().strip()
                 #本文取得
                 summary = new_tab.locator('div.articleBody.article_body').inner_html()
                 summary_text = summary_text = new_tab.locator('div.articleBody.article_body').inner_text().strip()
@@ -229,8 +227,7 @@ def download_article_content(context, target, page_num, article_num, keyword):
 
         # 保存先ディレクトリを作成し、書き込み
         os.makedirs(output_dir, exist_ok=True)
-        article_id = url.split('/')[-2]
-        article_path = os.path.join(output_dir, f'article_{article_id}.md')
+        article_path = os.path.join(output_dir, f'{article_title}.md')
         
         with open(article_path, 'w', encoding='utf-8') as f:
             f.write(full_markdown_content)

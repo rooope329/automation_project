@@ -31,7 +31,7 @@ def main(OUTPUT_PATH) -> None:
   '''
   # 1：ダウンロード処理
   # 日付のリストを取得
-  date_list = get_date(0,5)
+  date_list = get_date(0,4)
   #ダウンロード処理
   downloads = download_main(date_list, OUTPUT_PATH)
   if not downloads:
@@ -62,6 +62,8 @@ def main(OUTPUT_PATH) -> None:
   process_csv.to_csv(CSV_OUTPUT_PATH, index=False, encoding="utf-8")
   print(f"CSV出力完了：{CSV_OUTPUT_PATH}")
   print(f"{min(date_list)}から{max(date_list)}までのデータを収集しました")
+
+  #dataフォルダ内の日経xTECH内のフォルダを時系列順にsortする。
 
 def execute():
   try:
