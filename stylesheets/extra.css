@@ -1,0 +1,99 @@
+/* H1見出し (#) のデザイン修正（メインタイトル） */
+.md-typeset h1 {
+  color: #1a237e;            /* 💡 文字色を濃いインディゴにして存在感を出します */
+  font-weight: 700;          /* 💡 フォントを太くしてタイトルらしく */
+  border-bottom: 3px solid #3f51b5; /* 💡 下部にヘッダーと同系色のアクセントラインを引く */
+  padding-bottom: 12px;      /* 線と文字の間の心地よい余白 */
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;      /* 下の説明文との隙間を広げてスッキリさせる */
+}
+
+.md-typeset h2 {
+  color: #303f9f;            /* 文字の色（濃いインディゴ） */
+  background-color: #f5f7fa; /* 薄い背景色 */
+  border-left: 6px solid #3f51b5; /* 左側の太い線 */
+  border-bottom: 1px solid #e0e0e0; /* 下の細い線 */
+  padding: 0.5em 0.8em;      /* 文字の周りの余白 */
+  margin-top: 1.5em;         /* 上の要素との隙間 */
+  border-radius: 2px;        /* 角を少しだけ丸くする */
+}
+
+/* H3見出し (###) のデザイン - スタンダード */
+.md-typeset h3 {
+  color: #3949ab;            /* H2より少しだけ明るいインディゴ */
+  border-left: 5px solid #5c6bc0; /* H2より細めの左線 */
+  padding-left: 0.8em;       /* 線と文字の隙間 */
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+/* テーブル全体を広げて見やすく */
+.md-typeset table:not([class]) {
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* 全体に軽い影 */
+}
+
+/* テーブルのヘッダー（1行目）をインディゴで塗りつぶす */
+.md-typeset table:not([class]) th {
+  background-color: #3f51b5;
+  color: white;
+  font-weight: bold;
+  font-size: 1.05em;
+  border-bottom: none;
+}
+
+/* マウスを乗せた行（行全体）の色をフワッと変える（ホバー効果） */
+.md-typeset table:not([class]) tbody tr:hover {
+  background-color: #f0f4ff;
+  transition: background-color 0.2s ease;
+}
+
+/* 1. 本文のタイポグラフィ（読みやすさの根本） */
+.md-typeset p {
+  line-height: 1.8;          /* 💡 行間を広げて長文の圧迫感を減らす */
+  font-size: 1.05em;         /* 💡 文字をほんの少しだけ大きく */
+  color: #333333;            /* 真っ黒ではなく、目に優しい濃いグレー */
+  margin-bottom: 1.5em;      /* 段落と段落の間の隙間をしっかり取る */
+  letter-spacing: 0.03em;    /* 文字と文字の隙間を少し開ける */
+}
+
+/* 2. 記事内の小見出し（H4）のデザイン */
+/* 今回の記事にある「#### 「業務機能を...」に対応します */
+.md-typeset h4 {
+  color: #1a237e;
+  font-weight: 700;
+  border-left: 4px solid #9fa8da; /* H3より控えめな左線 */
+  padding-left: 0.8em;
+  margin-top: 2.5em;         /* 前の段落としっかり距離を取る */
+  margin-bottom: 1em;
+}
+
+/* 3. 画像とキャプション（出所など）を美しく整える */
+.md-typeset img {
+  border-radius: 6px;        /* 画像の角を少し丸くして現代的に */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 画像に薄い影をつけて浮き立たせる */
+  display: block;
+  margin: 2em auto;          /* 画像を中央揃えにし、上下の余白を取る */
+  max-width: 100%;
+}
+
+/* 画像直下のテキスト（キャプションや出所など）を小さくする */
+.md-typeset img + p,
+.md-typeset img + p em {
+  text-align: center;
+  font-size: 0.85em;
+  color: #757575;
+  margin-top: -1em;          /* 画像との隙間を詰める */
+  margin-bottom: 2em;
+}
+
+/* 4. 引用・インタビュー発言（Blockquote: > ）の装飾 */
+.md-typeset blockquote {
+  border-left: 4px solid #3f51b5; /* インディゴのアクセントライン */
+  background-color: #f5f7fa; /* 薄いグレーの背景 */
+  padding: 1em 1.5em;
+  margin: 2em 0;
+  border-radius: 0 4px 4px 0;
+  color: #555;               /* 本文より少し薄い色でメリハリをつける */
+}

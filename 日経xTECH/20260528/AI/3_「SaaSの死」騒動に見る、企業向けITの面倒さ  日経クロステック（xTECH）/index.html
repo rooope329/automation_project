@@ -1,0 +1,3511 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/rooope329/automation_project/%E6%97%A5%E7%B5%8CxTECH/20260528/AI/3_%E3%80%8CSaaS%E3%81%AE%E6%AD%BB%E3%80%8D%E9%A8%92%E5%8B%95%E3%81%AB%E8%A6%8B%E3%82%8B%E3%80%81%E4%BC%81%E6%A5%AD%E5%90%91%E3%81%91IT%E3%81%AE%E9%9D%A2%E5%80%92%E3%81%95%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/">
+      
+      
+        <link rel="prev" href="../3_RAG%E7%B2%BE%E5%BA%A6%E3%82%92%E5%B7%A6%E5%8F%B3%E3%81%99%E3%82%8B%E3%80%81%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A8%E3%83%8F%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%83%89%E6%A4%9C%E7%B4%A2%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/">
+      
+      
+        <link rel="next" href="../3_%E3%80%8C%E3%82%AC%E3%83%A9%E3%82%B9%E3%82%B3%E3%82%A2%E5%9F%BA%E6%9D%BF%E3%80%8D%E3%82%92AI%E5%8D%8A%E5%B0%8E%E4%BD%93%E3%81%AB%E3%80%81%E6%AC%A1%E4%B8%96%E4%BB%A3%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E7%AB%B6%E3%81%86%E3%80%80%E3%83%89%E3%82%A4%E3%83%84%E5%8B%A2%E5%85%88%E8%A1%8C%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>「SaaSの死」騒動に見る、企業向けITの面倒さ | 日経クロステック（xTECH） - ITニュース一覧ページ</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#saasit-xtech" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../../../.." title="ITニュース一覧ページ" class="md-header__button md-logo" aria-label="ITニュース一覧ページ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ITニュース一覧ページ
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              「SaaSの死」騒動に見る、企業向けITの面倒さ | 日経クロステック（xTECH）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rooope329/automation_project" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rooope329/automation_project
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="ITニュース一覧ページ" class="md-nav__button md-logo" aria-label="ITニュース一覧ページ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ITニュース一覧ページ
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rooope329/automation_project" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rooope329/automation_project
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tech News Archive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    日経xTECH
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    日経xTECH
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20260529
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    20260529
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/1_%E7%B4%80%E5%85%83%E5%89%8D%E3%81%8B%E3%82%89%E5%88%A9%E7%94%A8%E7%9B%AE%E7%9A%84%E3%81%AF%E5%A4%89%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E3%80%80%E5%9F%BA%E6%9C%AC%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF%E3%81%AF%E9%8D%B5%E3%81%A8%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    紀元前から利用目的は変わらない 基本の仕組みは鍵とアルゴリズム | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/2_6G%E3%81%BE%E3%81%A7%E8%A6%8B%E6%8D%AE%E3%81%88%E3%81%A6%E3%80%8C%E3%81%82%E3%82%8A%E6%96%B9%E3%80%8D%E3%82%92%E6%8F%8F%E3%81%8F%E3%80%80%E5%AE%9A%E9%87%8F%E7%9A%84%E3%81%AA%E8%A3%8F%E4%BB%98%E3%81%91%E3%81%8C%E6%88%90%E9%95%B7%E3%81%B8%E3%81%AE%E7%AC%AC%E4%B8%80%E6%AD%A9%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6Gまで見据えて「あり方」を描く 定量的な裏付けが成長への第一歩 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/2_SDA%E3%81%AE%E6%BD%AE%E6%B5%81%E6%84%9F%E3%81%98%E3%81%9F%E3%80%80%E3%81%BB%E3%81%8B%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SDAの潮流感じた ほか | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/2_%E3%80%8CAT%EF%BC%86T%E3%81%AA%E3%81%A9%E7%B1%B33%E7%A4%BE%E3%80%81%E8%A1%9B%E6%98%9F%E3%82%B9%E3%83%9E%E3%83%9B%E7%9B%B4%E6%8E%A5%E9%80%9A%E4%BF%A1%E3%81%AE%E6%96%B0%E4%BC%9A%E7%A4%BE%E3%80%8D%E3%81%AA%E3%81%A95%E6%9C%AC%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「AT＆Tなど米3社、衛星スマホ直接通信の新会社」など5本 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/2_%E3%83%8A%E3%83%95%E3%82%B5%E5%88%86%E8%A7%A3%E3%83%97%E3%83%A9%E3%83%B3%E3%83%88%E7%A8%BC%E5%83%8D%E7%8E%87%E3%80%81%E3%80%8C%E5%A4%A7%E3%81%8D%E3%81%AA%E5%A4%89%E5%8C%96%E3%81%AA%E3%81%97%E3%80%8D%E6%97%AD%E5%8C%96%E6%88%90%E7%A4%BE%E9%95%B7%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ナフサ分解プラント稼働率、「大きな変化なし」旭化成社長 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/2_%E7%9B%AE%E7%9A%84%E3%81%AB%E5%90%88%E3%81%86%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88%E9%81%B8%E3%81%B3%E3%82%92%E3%80%8CGemini%E3%80%8D%E3%81%AB%E7%9B%B8%E8%AB%87%E3%80%81%E4%BD%BF%E3%81%84%E6%96%B9%E3%82%84%E6%99%82%E7%9F%AD%E8%A1%93%E3%82%82%E8%81%9E%E3%81%91%E3%82%8B%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    目的に合うフリーソフト選びを「Gemini」に相談、使い方や時短術も聞ける | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_5G%E3%82%84GPU%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%AE%E3%80%8C%E3%82%BF%E3%83%95%E3%83%96%E3%83%83%E3%82%AF%E3%80%8D%E3%80%81%E7%94%A8%E9%80%94%E6%8B%A1%E5%A4%A7%E3%81%97%E7%8F%BE%E5%A0%B4%E3%81%A73D%E3%83%87%E3%83%BC%E3%82%BF%E6%B4%BB%E7%94%A8%E3%81%B8%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5GやGPUに対応の「タフブック」、用途拡大し現場で3Dデータ活用へ | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_AI%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E3%81%AE%E7%9B%B4%E6%B5%81800V%E7%B5%A6%E9%9B%BB%E3%80%81%E7%99%BB%E5%A0%B4%E3%81%AF2027%E5%B9%B4%E3%81%8B%E3%80%80%E7%B1%B3TI%E8%A6%8B%E9%80%9A%E3%81%97%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AIデータセンターの直流800V給電、登場は2027年か 米TI見通し | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E3%80%8C10%E5%B9%B4%E4%BB%A5%E5%86%85%E3%81%AB%E6%99%AE%E5%8F%8A%E3%81%99%E3%82%8B%E3%80%8D6%E5%89%B2%E8%B6%85%E3%80%81%E4%BA%8C%E8%B6%B3%E6%AD%A9%E8%A1%8C%E3%82%88%E3%82%8A%E6%89%8B%E3%81%AE%E6%A9%9F%E8%83%BD%E3%81%AB%E6%9C%9F%E5%BE%85%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「10年以内に普及する」6割超、二足歩行より手の機能に期待 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E3%80%8C%E4%B8%96%E7%95%8C%E4%B8%80%E3%81%AF%E7%8B%99%E3%82%8F%E3%81%AA%E3%81%84%E3%80%8DNVIDIA%E3%81%A8%E5%8D%94%E6%A5%AD%E3%81%A7AI%E6%99%82%E4%BB%A3%E3%81%AE%E8%A8%88%E7%AE%97%E6%A9%9F%E3%81%B8%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「世界一は狙わない」NVIDIAと協業でAI時代の計算機へ | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E3%80%8C%E7%A9%BA%E6%B0%97%E3%82%92%E8%B3%87%E6%BA%90%E3%81%AB%E3%80%8D%E4%BF%A1%E5%BF%B5%E7%B5%90%E5%AE%9F%E3%81%AEMOF%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「空気を資源に」信念結実のMOF | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E3%83%81%E3%83%A5%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%80%81E2E%E8%87%AA%E5%8B%95%E9%81%8B%E8%BB%A2%E3%81%A7%E5%85%AC%E9%81%93%E8%B5%B0%E8%A1%8C%E3%80%80%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC%E6%95%B020%E5%84%84%E3%81%AB%E3%80%81VLA%E3%81%A7%E3%81%AF%E3%80%8C%E5%9B%BD%E5%86%85%E5%88%9D%E3%80%8D%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    チューリング、E2E自動運転で公道走行 パラメーター数20億に、VLAでは「国内初」 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E3%83%8B%E3%82%B3%E3%83%B3%E3%80%81%E5%8D%8A%E5%B0%8E%E4%BD%93%E3%81%A83D%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF%E3%83%BC%E3%81%AB%E9%9B%86%E4%B8%AD%E6%8A%95%E8%B3%87%E3%80%80%E5%BE%A9%E6%B4%BB%E3%81%B8%E3%80%8C%E7%A8%BC%E3%81%90%E3%83%BB%E8%82%B2%E3%81%A6%E3%82%8B%E3%82%92%E5%8C%BA%E5%88%A5%E3%80%8D%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ニコン、半導体と3Dプリンターに集中投資 復活へ「稼ぐ・育てるを区別」 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E3%83%90%E3%82%A4%E3%82%AA%E7%A0%94%E7%A9%B6%E3%82%92%E3%83%95%E3%82%A3%E3%82%B8%E3%82%AB%E3%83%ABAI%E3%81%A7%E8%87%AA%E5%8B%95%E5%8C%96%E3%80%80%E5%AE%9F%E9%A8%93%E8%80%85%E3%81%AF%E5%8F%8C%E8%85%95%E3%83%AD%E3%83%9C%E3%80%81%E6%9D%B1%E4%BA%AC%E7%A7%91%E5%AD%A6%E5%A4%A7%E3%81%AB%E6%96%B0%E6%8B%A0%E7%82%B9%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    バイオ研究をフィジカルAIで自動化 実験者は双腕ロボ、東京科学大に新拠点 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E3%83%AA%E3%82%B3%E3%83%BC%E3%81%AE%E3%83%9E%E3%83%AB%E3%83%81%E3%83%A2%E3%83%BC%E3%83%80%E3%83%ABAI%E3%80%81%E5%9B%B3%E9%9D%A2%E3%81%8B%E3%82%89%E5%AF%B8%E6%B3%95%E8%AA%AD%E3%81%BF%E5%87%BA%E3%81%97%E6%99%AE%E9%80%9A%E5%85%AC%E5%B7%AE%E3%82%92%E9%81%A9%E7%94%A8%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    リコーのマルチモーダルAI、図面から寸法読み出し普通公差を適用 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E4%B8%AD%E5%A4%96%E8%A3%BD%E8%96%AC%E3%80%81%E6%8A%97%E4%BD%93%E7%89%B9%E5%8C%96%E3%81%AE%E3%83%97%E3%83%AD%E3%83%86%E3%82%A4%E3%83%B3AI%E7%8B%AC%E8%87%AA%E9%96%8B%E7%99%BA%E3%80%80%E3%82%A2%E3%82%B9%E3%83%86%E3%83%A9%E3%82%B9%E3%81%AF%E6%8B%A1%E6%95%A3%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AB%E7%9D%80%E7%9B%AE%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    中外製薬、抗体特化のプロテインAI独自開発 アステラスは拡散モデルに着目 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E4%BF%A1%E9%A0%BC%E3%82%92%E6%90%8D%E3%81%AA%E3%81%A3%E3%81%9FNTT%E3%83%89%E3%82%B3%E3%83%A2%E3%81%AE%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%93%81%E8%B3%AA%E3%80%81%E6%94%B9%E5%96%84%E3%81%AE%E9%81%93%E7%AD%8B%E3%82%92%E6%8B%85%E5%BD%93%E8%80%85%E3%81%AB%E8%81%9E%E3%81%8F%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信頼を損なったNTTドコモのネットワーク品質、改善の道筋を担当者に聞く | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E5%B1%B1%E5%96%84%E3%82%84%E3%83%84%E3%83%A0%E3%83%A9%E3%81%AA%E3%81%A9%E3%80%81%E4%BA%BA%E5%9E%8B%E3%83%AD%E3%83%9C%E3%81%A7%E3%82%BF%E3%83%83%E3%82%B0%E3%80%802026%E5%B9%B47%E6%9C%88%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%8E%E9%9B%86%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E7%A8%BC%E5%83%8D%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    山善やツムラなど、人型ロボでタッグ 2026年7月にデータ収集センター稼働 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E6%9C%89%E5%8A%9BAI%E5%AD%A6%E4%BC%9AACL%E3%81%A7%E8%AB%96%E6%96%87%E3%81%AE%E3%80%8C%E5%B9%BB%E8%A6%9A%E3%80%8D%E5%95%8F%E9%A1%8C%E3%80%81100%E4%BB%B6%E4%BB%A5%E4%B8%8A%E3%81%8C%E5%8D%B4%E4%B8%8B%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    有力AI学会ACLで論文の「幻覚」問題、100件以上が却下 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E6%B8%A9%E6%B0%B4%E3%81%A7%E5%86%B7%E3%82%84%E3%81%97%E5%86%B7%E5%8D%B4%E9%9B%BB%E5%8A%9B2%E5%89%B2%E6%B8%9B%E3%80%81%E7%9B%B4%E6%B5%81800V%E3%81%AF%E8%A6%8B%E9%80%81%E3%82%8A%E3%81%8B%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    温水で冷やし冷却電力2割減、直流800Vは見送りか | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/3_%E7%94%9F%E6%88%90AI%E3%81%A7%E6%A9%8B%E6%A2%81%E3%81%AE%E7%82%B9%E6%A4%9C%E8%AA%BF%E6%9B%B8%E6%A1%88%E3%82%92%E8%87%AA%E5%8B%95%E4%BD%9C%E6%88%90%E3%80%81NTT%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%A8%E5%BB%BA%E8%A8%AD%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E3%81%8C%E5%85%B1%E5%90%8C%E3%81%A7%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    生成AIで橋梁の点検調書案を自動作成、NTTグループと建設コンサルが共同で | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/4_LLM%E3%81%AB%E3%81%A9%E3%81%93%E3%81%BE%E3%81%A7%E5%A7%94%E3%81%AD%E3%82%8B%E3%81%8B%E3%80%81AI%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%81%AE%E3%80%8C%E9%9D%9E%E6%B1%BA%E5%AE%9A%E8%AB%96%E3%80%8D%E5%95%8F%E9%A1%8C%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLMにどこまで委ねるか、AIエージェントの「非決定論」問題 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/4_%E3%80%8C%E6%9D%A5%E3%82%8B%E3%81%B9%E3%81%8D%E3%82%82%E3%81%AE%E3%81%8C%E6%9D%A5%E3%81%9F%E3%80%8D%E3%80%81Anthropic%E3%81%8CMythos%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AEAI%E3%83%A2%E3%83%87%E3%83%AB%E3%82%92%E4%B8%80%E8%88%AC%E5%85%AC%E9%96%8B%E3%81%B8%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「来るべきものが来た」、AnthropicがMythosクラスのAIモデルを一般公開へ | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/4_%E5%8D%8A%E5%B0%8E%E4%BD%93%E7%8E%8B%E5%9B%BD%E3%81%AE%E5%8F%B0%E6%B9%BE%E3%81%8C%E7%B1%B3%E4%B8%AD%E3%81%AE%E5%8F%96%E5%BC%95%E3%82%AB%E3%83%BC%E3%83%89%E3%81%AB%E3%80%81%E6%97%A5%E6%9C%AC%E3%81%AF%E8%B3%A2%E3%81%8F%E7%AB%8B%E3%81%A1%E5%9B%9E%E3%82%8B%E3%81%B9%E3%81%97%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    半導体王国の台湾が米中の取引カードに、日本は賢く立ち回るべし | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/AI/4_%E7%8B%AC%E8%87%AACPU%E3%81%A7%E7%8B%99%E3%81%86%E3%82%BD%E3%83%96%E3%83%AA%E3%83%B3AI%E3%80%81%E3%83%A9%E3%83%94%E3%83%80%E3%82%B9%E5%91%B3%E6%96%B9%E3%81%ABGPU%E3%81%A8%E5%85%B1%E5%AD%98%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    独自CPUで狙うソブリンAI、ラピダス味方にGPUと共存 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DX
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DX
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/DX/2_SBI%E6%96%B0%E7%94%9F%E9%8A%80%E3%80%81%E3%80%8C%E7%AC%AC4%E3%81%AE%E3%83%A1%E3%82%AC%E3%83%90%E3%83%B3%E3%82%AF%E6%A7%8B%E6%83%B3%E3%80%8D%E3%81%AE%E5%BD%B9%E5%89%B2%E3%81%AB%E5%A4%89%E5%8C%96%E3%80%80%E5%88%A9%E4%B8%8A%E3%81%92%E3%81%A7%E6%82%A9%E3%82%80%E5%9C%B0%E9%8A%80%E3%82%92%E6%94%AF%E6%8F%B4%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SBI新生銀、「第4のメガバンク構想」の役割に変化 利上げで悩む地銀を支援 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/DX/2_%E5%BB%BA%E8%A8%AD%E6%8A%95%E8%B3%87%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    建設投資 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/DX/2_%E5%BB%BA%E8%A8%AD%E7%94%A3%E6%A5%AD%E3%81%AE%E5%B0%B1%E6%A5%AD%E8%80%85%E6%95%B0%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    建設産業の就業者数 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/DX/3_%E3%80%8CMINORI%E3%81%AE%E3%81%93%E3%81%AE%E7%8A%B6%E6%B3%81%E3%82%92%E3%80%81%E3%81%84%E3%81%A4%E3%81%BE%E3%81%A7%E3%82%82%E7%B6%9A%E3%81%91%E3%82%8B%E3%81%AE%E3%81%8B%E2%80%A6%E2%80%A6%E3%80%8D%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「MINORIのこの状況を、いつまでも続けるのか……」 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_3" id="__nav_2_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    IT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/IT/2_SBI%E6%96%B0%E7%94%9F%E9%8A%80%E3%80%81%E3%80%8C%E7%AC%AC4%E3%81%AE%E3%83%A1%E3%82%AC%E3%83%90%E3%83%B3%E3%82%AF%E6%A7%8B%E6%83%B3%E3%80%8D%E3%81%AE%E5%BD%B9%E5%89%B2%E3%81%AB%E5%A4%89%E5%8C%96%E3%80%80%E5%88%A9%E4%B8%8A%E3%81%92%E3%81%A7%E6%82%A9%E3%82%80%E5%9C%B0%E9%8A%80%E3%82%92%E6%94%AF%E6%8F%B4%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SBI新生銀、「第4のメガバンク構想」の役割に変化 利上げで悩む地銀を支援 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/IT/2_%E3%83%8A%E3%83%95%E3%82%B5%E5%88%86%E8%A7%A3%E3%83%97%E3%83%A9%E3%83%B3%E3%83%88%E7%A8%BC%E5%83%8D%E7%8E%87%E3%80%81%E3%80%8C%E5%A4%A7%E3%81%8D%E3%81%AA%E5%A4%89%E5%8C%96%E3%81%AA%E3%81%97%E3%80%8D%E6%97%AD%E5%8C%96%E6%88%90%E7%A4%BE%E9%95%B7%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ナフサ分解プラント稼働率、「大きな変化なし」旭化成社長 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/IT/2_%E7%9B%AE%E7%9A%84%E3%81%AB%E5%90%88%E3%81%86%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88%E9%81%B8%E3%81%B3%E3%82%92%E3%80%8CGemini%E3%80%8D%E3%81%AB%E7%9B%B8%E8%AB%87%E3%80%81%E4%BD%BF%E3%81%84%E6%96%B9%E3%82%84%E6%99%82%E7%9F%AD%E8%A1%93%E3%82%82%E8%81%9E%E3%81%91%E3%82%8B%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    目的に合うフリーソフト選びを「Gemini」に相談、使い方や時短術も聞ける | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/IT/3_AI%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E3%81%AE%E7%9B%B4%E6%B5%81800V%E7%B5%A6%E9%9B%BB%E3%80%81%E7%99%BB%E5%A0%B4%E3%81%AF2027%E5%B9%B4%E3%81%8B%E3%80%80%E7%B1%B3TI%E8%A6%8B%E9%80%9A%E3%81%97%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AIデータセンターの直流800V給電、登場は2027年か 米TI見通し | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/IT/3_%E3%80%8CMINORI%E3%81%AE%E3%81%93%E3%81%AE%E7%8A%B6%E6%B3%81%E3%82%92%E3%80%81%E3%81%84%E3%81%A4%E3%81%BE%E3%81%A7%E3%82%82%E7%B6%9A%E3%81%91%E3%82%8B%E3%81%AE%E3%81%8B%E2%80%A6%E2%80%A6%E3%80%8D%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「MINORIのこの状況を、いつまでも続けるのか……」 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/IT/3_%E4%B8%AD%E5%A4%96%E8%A3%BD%E8%96%AC%E3%80%81%E6%8A%97%E4%BD%93%E7%89%B9%E5%8C%96%E3%81%AE%E3%83%97%E3%83%AD%E3%83%86%E3%82%A4%E3%83%B3AI%E7%8B%AC%E8%87%AA%E9%96%8B%E7%99%BA%E3%80%80%E3%82%A2%E3%82%B9%E3%83%86%E3%83%A9%E3%82%B9%E3%81%AF%E6%8B%A1%E6%95%A3%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AB%E7%9D%80%E7%9B%AE%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    中外製薬、抗体特化のプロテインAI独自開発 アステラスは拡散モデルに着目 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/IT/4_TLS%E8%A8%BC%E6%98%8E%E6%9B%B8%E3%81%AE%E6%9C%89%E5%8A%B9%E6%9C%9F%E9%96%93%E3%81%8C%E7%9F%AD%E7%B8%AE%E3%80%81%E6%AE%B5%E9%9A%8E%E7%9A%84%E3%81%AB47%E6%97%A5%E3%81%B8%E3%80%80%E6%9B%B4%E6%96%B0%E6%BC%8F%E3%82%8C%E3%81%8C%E9%9A%9C%E5%AE%B3%E3%83%AA%E3%82%B9%E3%82%AF%E3%81%AB%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TLS証明書の有効期間が短縮、段階的に47日へ 更新漏れが障害リスクに | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20260529/IT/4_%E3%80%8C%E6%9D%A5%E3%82%8B%E3%81%B9%E3%81%8D%E3%82%82%E3%81%AE%E3%81%8C%E6%9D%A5%E3%81%9F%E3%80%8D%E3%80%81Anthropic%E3%81%8CMythos%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AEAI%E3%83%A2%E3%83%87%E3%83%AB%E3%82%92%E4%B8%80%E8%88%AC%E5%85%AC%E9%96%8B%E3%81%B8%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「来るべきものが来た」、AnthropicがMythosクラスのAIモデルを一般公開へ | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20260528
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    20260528
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_AWS%20Summit%20Japan%202026%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Summit Japan 2026 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_NTT%E3%83%87%E3%83%BC%E3%82%BFG%E7%A4%BE%E9%95%B7%E3%81%8CNTT%E5%89%AF%E7%A4%BE%E9%95%B7%E3%81%AB%E3%80%80%E4%BD%90%E3%80%85%E6%9C%A8%E8%A3%95%E6%B0%8F%E3%80%81%E7%94%9F%E3%81%88%E6%8A%9C%E3%81%8D%E5%88%9D%E3%81%AE%E6%8C%81%E3%81%A1%E6%A0%AA%E4%B8%89%E5%BD%B9%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NTTデータG社長がNTT副社長に 佐々木裕氏、生え抜き初の持ち株三役 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_Windows%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E7%94%BB%E9%9D%A2%E3%82%92%E3%80%8CGemini%E3%80%8D%E3%81%AB%E8%A6%8B%E3%81%9B%E3%82%8B%E3%80%81%E5%8E%9F%E5%9B%A0%E3%81%A8%E5%AF%BE%E7%AD%96%E3%82%92AI%E3%81%8C%E8%A7%A3%E8%AA%AC%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windowsのエラー画面を「Gemini」に見せる、原因と対策をAIが解説 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_%E5%BB%BA%E7%AF%89%E5%9F%BA%E6%BA%96%E9%81%A9%E5%90%88%E5%88%A4%E5%AE%9A%E8%B3%87%E6%A0%BC%E8%80%85%E3%80%81%E9%9C%80%E8%A6%81%E5%A2%97%E3%81%AB%E5%AF%BE%E3%81%97%E8%8B%A5%E6%89%8B%E4%B8%8D%E8%B6%B3%E3%81%8C%E6%B7%B1%E5%88%BB%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    建築基準適合判定資格者、需要増に対し若手不足が深刻 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_%E7%84%A1%E7%90%86%E3%81%97%E3%81%A6%E6%88%90%E9%95%B7%E3%81%97%E3%81%9F%E3%81%8F%E3%81%AA%E3%81%84%E3%81%8C%E4%BC%9A%E7%A4%BE%E3%82%82%E8%BE%9E%E3%82%81%E3%81%9F%E3%81%8F%E3%81%AA%E3%81%84%E3%80%81%E3%80%8C%E3%81%BB%E3%81%A9%E3%81%BB%E3%81%A9%E3%81%AB%E5%83%8D%E3%81%8F%E3%80%8D%E8%8B%A5%E6%89%8B%E3%81%AE%E6%9C%AC%E9%9F%B3%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    無理して成長したくないが会社も辞めたくない、「ほどほどに働く」若手の本音 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_AI%E3%81%A7BIM%E3%81%8B%E3%82%89%E6%96%BD%E8%A8%AD%E6%83%85%E5%A0%B1%E3%82%92%E5%BC%95%E3%81%8D%E5%87%BA%E3%81%99%E5%AE%9F%E9%A8%93%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AIでBIMから施設情報を引き出す実験 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_AI%E3%81%A7%E8%84%86%E5%BC%B1%E6%80%A7%E6%8E%A2%E7%B4%A2%E3%81%AE%E9%80%9F%E5%BA%A6%E3%81%AF%E5%8A%87%E7%9A%84%E5%A4%89%E5%8C%96%E3%80%80%E3%82%B0%E3%83%BC%E3%82%B0%E3%83%AB%E5%82%98%E4%B8%8B%E3%81%AE%E3%82%A6%E3%82%A3%E3%82%BA%E3%81%8C%E8%AD%A6%E9%90%98%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AIで脆弱性探索の速度は劇的変化 グーグル傘下のウィズが警鐘 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_AWS%E3%82%AC%E3%83%BC%E3%83%9E%E3%83%B3CEO%E3%80%8C%E5%8F%AF%E8%83%BD%E6%80%A7%E8%A7%A3%E3%81%8D%E6%94%BE%E3%81%A4%E3%80%8D%E3%80%80%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3AI%E3%81%AE%E6%9C%80%E6%96%B0AI%E3%83%A2%E3%83%87%E3%83%AB%E6%8F%90%E4%BE%9B%E3%81%A7%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWSガーマンCEO「可能性解き放つ」 オープンAIの最新AIモデル提供で | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_IT%E5%A4%A7%E6%89%8B4%E7%A4%BE%E3%83%88%E3%83%83%E3%83%97%E3%81%8C%E8%AA%9E%E3%82%8BSaaS%E3%81%AE%E6%AD%BB%E3%80%80%E5%AF%8C%E5%A3%AB%E9%80%9A%E3%80%8C%E7%8F%BE%E7%8A%B6%E5%9B%BA%E5%9F%B7%E3%81%A7%E3%81%AF%E6%88%90%E9%95%B7%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%80%8D%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT大手4社トップが語るSaaSの死 富士通「現状固執では成長できない」 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_MUFG%E3%81%8C%E3%82%B0%E3%83%BC%E3%82%B0%E3%83%AB%E3%81%A8%E6%8F%90%E6%90%BA%E6%8B%A1%E5%A4%A7%E3%80%80%E8%B3%BC%E5%85%A5%E3%83%BB%E6%B1%BA%E6%B8%88%E5%8F%AF%E8%83%BD%E3%81%AAAI%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E9%96%8B%E7%99%BA%E3%81%B8%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MUFGがグーグルと提携拡大 購入・決済可能なAIエージェント開発へ | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_Microsoft%20Build%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Build | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_Mythos%E7%99%BA%E8%A6%8B%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%82%82%E6%85%8C%E3%81%A6%E3%81%9A%E5%AF%BE%E5%87%A6%E5%8F%AF%E8%83%BD%E3%81%AB%E3%80%81%E3%83%9E%E3%82%AF%E3%83%8B%E3%82%AB%E3%81%8C%E3%83%AA%E3%82%B9%E3%82%AF%E7%AE%A1%E7%90%86%E6%94%AF%E6%8F%B4SaaS%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mythos発見の脆弱性も慌てず対処可能に、マクニカがリスク管理支援SaaS | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_RAG%E7%B2%BE%E5%BA%A6%E3%82%92%E5%B7%A6%E5%8F%B3%E3%81%99%E3%82%8B%E3%80%81%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A8%E3%83%8F%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%83%89%E6%A4%9C%E7%B4%A2%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG精度を左右する、メタデータとハイブリッド検索 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「SaaSの死」騒動に見る、企業向けITの面倒さ | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「SaaSの死」騒動に見る、企業向けITの面倒さ | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#saas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        「業務機能を簡単に作れる」だけで、SaaSは死なない
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AIエージェントの正確性は誰が保証するのか
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2ページ目
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2ページ目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saas_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        多くの企業が同一のSaaSを利用することに価値がある
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        保守を社外に丸投げできるのが、クラウドの価値
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saaserp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SaaS型ERPは企業情報システムの「頭脳」に
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_%E3%80%8C%E3%82%AC%E3%83%A9%E3%82%B9%E3%82%B3%E3%82%A2%E5%9F%BA%E6%9D%BF%E3%80%8D%E3%82%92AI%E5%8D%8A%E5%B0%8E%E4%BD%93%E3%81%AB%E3%80%81%E6%AC%A1%E4%B8%96%E4%BB%A3%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E7%AB%B6%E3%81%86%E3%80%80%E3%83%89%E3%82%A4%E3%83%84%E5%8B%A2%E5%85%88%E8%A1%8C%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「ガラスコア基板」をAI半導体に、次世代パッケージ競う ドイツ勢先行 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E9%81%8B%E7%94%A8%E3%81%ABAI%E3%82%92%E7%94%9F%E3%81%8B%E3%81%99%E3%81%9F%E3%82%81%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9%E3%80%81%E3%82%AB%E3%82%AE%E3%81%AF%E5%AE%89%E5%85%A8%E6%80%A7%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E6%95%B4%E5%82%99%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ネットワーク運用にAIを生かすための注意点、カギは安全性とデータ整備 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_%E3%83%97%E3%83%AC%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E9%83%A8%E6%9D%90%E3%81%AE%E5%9B%B3%E9%9D%A2%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E8%87%AA%E5%8B%95%E5%8C%96%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    プレキャスト部材の図面チェック自動化 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_%E3%83%97%E3%83%AD%E3%83%86%E3%82%A4%E3%83%B3AI%E3%81%AE%E6%96%B0%E7%99%BA%E6%83%B3%E3%80%80%E6%96%B0%E8%88%88%E3%81%AE%E3%83%AC%E3%83%9C%E3%83%AB%E3%82%AB%E3%80%81%E6%96%B0%E6%97%A7AI%E3%82%92%E9%81%A9%E6%9D%90%E9%81%A9%E6%89%80%E3%81%A7%E4%BD%BF%E3%81%84%E5%88%86%E3%81%91%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    プロテインAIの新発想 新興のレボルカ、新旧AIを適材適所で使い分け | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%ABLLM%E3%81%A7AI%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%82%92%E8%A9%A6%E3%81%99%E3%80%81%E3%80%8CClaude%20Code%E3%80%8D%E3%82%92%E5%8B%95%E3%81%8B%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ローカルLLMでAIエージェントを試す、「Claude Code」を動かしてみる | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_%E5%B2%A9%E6%89%8B%E7%9C%8C%E4%B8%80%E9%96%A2%E5%B8%82%E3%80%81%E3%80%8CAI%E9%9B%BB%E8%A9%B1%E3%80%8D%E3%82%92%E8%A9%A6%E9%A8%93%E5%B0%8E%E5%85%A5%E3%80%80RAG%E5%88%A9%E7%94%A8%E3%81%A7%E8%81%B7%E5%93%A1%E3%81%AE%E8%B2%A0%E6%8B%85%E5%B0%91%E3%81%AA%E3%81%8F%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    岩手県一関市、「AI電話」を試験導入 RAG利用で職員の負担少なく | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_%E6%97%A5%E7%AB%8B%E3%81%8C%E5%85%A8%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B317%E4%B8%87%E5%8F%B0%E3%81%AB%E3%83%AC%E3%83%8E%E3%83%9C%E6%8E%A1%E7%94%A8%E3%80%81%E9%81%8B%E7%94%A8%E3%82%82%E3%82%A2%E3%82%A6%E3%83%88%E3%82%BD%E3%83%BC%E3%82%B9%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    日立が全グループのパソコン17万台にレノボ採用、運用もアウトソース | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_%E3%82%AD%E3%82%AA%E3%82%AF%E3%82%B7%E3%82%A2%E3%80%81%E3%83%88%E3%83%A8%E3%82%BF%E3%81%AB%E8%BF%AB%E3%82%8B%E9%AB%98%E5%8F%8E%E7%9B%8A%E3%81%AB%E6%AD%BB%E8%A7%92%E3%81%AF%E3%81%82%E3%82%8B%E3%81%8B%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    キオクシア、トヨタに迫る高収益に死角はあるか | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%83%BC%E6%8B%85%E5%BD%93%E8%80%85%E3%81%8C%E8%BB%A2%E8%81%B7%E3%82%92%E6%B1%BA%E6%84%8F%E3%80%81%E5%85%A8%E4%BD%93%E6%9C%80%E9%81%A9%E3%81%A8%E9%98%B2%E8%A1%9B%E7%AD%96%E3%81%AE%E3%82%B8%E3%83%AC%E3%83%B3%E3%83%9E%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    セキュリティー担当者が転職を決意、全体最適と防衛策のジレンマ | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_%E5%B7%9D%E5%B4%8E%E9%87%8D%E5%B7%A5%E3%80%81%E3%82%B7%E3%83%AA%E3%82%B3%E3%83%B3%E3%83%90%E3%83%AC%E3%83%BC%E3%81%AB%E3%83%95%E3%82%A3%E3%82%B8%E3%82%AB%E3%83%ABAI%E5%AE%9F%E8%A3%85%E6%8B%A0%E7%82%B9%E3%80%80NVIDIA%E3%81%AA%E3%81%A9%E3%81%A8%E9%80%A3%E6%90%BA%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    川崎重工、シリコンバレーにフィジカルAI実装拠点 NVIDIAなどと連携 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_%E6%94%BF%E5%BA%9C%E3%81%8C%E5%86%8D%E7%94%9F%E8%B3%87%E6%BA%90%E3%81%AE%E4%BE%9B%E7%B5%A6%E5%BC%B7%E5%8C%96%E3%81%AB1%E5%85%86%E5%86%86%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    政府が再生資源の供給強化に1兆円 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DX
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DX
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DX/1_%E9%81%B8%E6%8A%9E%E7%A7%91%E7%9B%AE%E3%81%AE%E5%87%BA%E9%A1%8C%E3%83%86%E3%83%BC%E3%83%9E%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    選択科目の出題テーマ | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DX/2_KDDI%E3%82%84%E3%83%8B%E3%83%87%E3%83%83%E3%82%AF%E3%81%AE%E4%B8%8D%E6%AD%A3%E6%9A%B4%E3%81%8F%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%95%E3%82%A9%E3%83%AC%E3%83%B3%E3%82%B8%E3%83%83%E3%82%AF%E3%80%81%E3%80%8C%E9%89%9B%E7%AD%86%E3%81%AA%E3%82%81%E3%81%AA%E3%82%81%E3%80%8D%E3%82%82%E6%8D%95%E6%8D%89%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KDDIやニデックの不正暴くデジタルフォレンジック、「鉛筆なめなめ」も捕捉 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DX/3_RAG%E7%B2%BE%E5%BA%A6%E3%82%92%E5%B7%A6%E5%8F%B3%E3%81%99%E3%82%8B%E3%80%81%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A8%E3%83%8F%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%83%89%E6%A4%9C%E7%B4%A2%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG精度を左右する、メタデータとハイブリッド検索 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DX/3_%E6%9C%AA%E6%9D%A5%E3%81%AE%E5%BB%BA%E7%AF%89%E7%94%9F%E7%94%A3%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AF%E7%B4%8490%E4%B8%87%E3%83%89%E3%83%AB%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    未来の建築生産システムは約90万ドル | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    IT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/2_NTT%E3%83%87%E3%83%BC%E3%82%BFG%E7%A4%BE%E9%95%B7%E3%81%8CNTT%E5%89%AF%E7%A4%BE%E9%95%B7%E3%81%AB%E3%80%80%E4%BD%90%E3%80%85%E6%9C%A8%E8%A3%95%E6%B0%8F%E3%80%81%E7%94%9F%E3%81%88%E6%8A%9C%E3%81%8D%E5%88%9D%E3%81%AE%E6%8C%81%E3%81%A1%E6%A0%AA%E4%B8%89%E5%BD%B9%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NTTデータG社長がNTT副社長に 佐々木裕氏、生え抜き初の持ち株三役 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/2_Windows%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E7%94%BB%E9%9D%A2%E3%82%92%E3%80%8CGemini%E3%80%8D%E3%81%AB%E8%A6%8B%E3%81%9B%E3%82%8B%E3%80%81%E5%8E%9F%E5%9B%A0%E3%81%A8%E5%AF%BE%E7%AD%96%E3%82%92AI%E3%81%8C%E8%A7%A3%E8%AA%AC%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windowsのエラー画面を「Gemini」に見せる、原因と対策をAIが解説 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/2_%E5%BA%83%E5%A0%B4%E3%82%84%E6%AD%A9%E8%A1%8C%E8%80%85%E3%83%87%E3%83%83%E3%82%AD%E3%81%A7%E9%A7%85%E5%91%A8%E8%BE%BA%E3%82%92%E5%86%8D%E7%B7%A8%E3%80%81%E5%BB%BA%E8%A8%AD%E8%B2%BB%E9%AB%98%E9%A8%B0%E3%81%A7%E4%B8%AD%E6%96%AD%E3%81%99%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%82%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    広場や歩行者デッキで駅周辺を再編、建設費高騰で中断するプロジェクトも | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/2_%E8%A8%AD%E5%AE%9A%E5%A4%89%E6%9B%B4%E3%81%97%E3%81%9F%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%81%8B%E3%82%89%E5%A4%A7%E9%87%8F%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%88%E3%80%81%E4%BD%9C%E6%A5%AD%E3%83%9F%E3%82%B9%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%97%E7%96%91%E3%81%86%E3%82%82%E7%9C%9F%E5%9B%A0%E3%81%AF%E5%88%A5%E3%81%AB%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定変更したスイッチから大量アラート、作業ミスのループ疑うも真因は別に | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/3_IT%E5%A4%A7%E6%89%8B4%E7%A4%BE%E3%83%88%E3%83%83%E3%83%97%E3%81%8C%E8%AA%9E%E3%82%8BSaaS%E3%81%AE%E6%AD%BB%E3%80%80%E5%AF%8C%E5%A3%AB%E9%80%9A%E3%80%8C%E7%8F%BE%E7%8A%B6%E5%9B%BA%E5%9F%B7%E3%81%A7%E3%81%AF%E6%88%90%E9%95%B7%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%80%8D%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT大手4社トップが語るSaaSの死 富士通「現状固執では成長できない」 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/3_Mythos%E7%99%BA%E8%A6%8B%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%82%82%E6%85%8C%E3%81%A6%E3%81%9A%E5%AF%BE%E5%87%A6%E5%8F%AF%E8%83%BD%E3%81%AB%E3%80%81%E3%83%9E%E3%82%AF%E3%83%8B%E3%82%AB%E3%81%8C%E3%83%AA%E3%82%B9%E3%82%AF%E7%AE%A1%E7%90%86%E6%94%AF%E6%8F%B4SaaS%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mythos発見の脆弱性も慌てず対処可能に、マクニカがリスク管理支援SaaS | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/3_RAG%E7%B2%BE%E5%BA%A6%E3%82%92%E5%B7%A6%E5%8F%B3%E3%81%99%E3%82%8B%E3%80%81%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A8%E3%83%8F%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%83%89%E6%A4%9C%E7%B4%A2%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG精度を左右する、メタデータとハイブリッド検索 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/3_%E3%80%8CSIer%E3%81%AE%E8%A6%8B%E7%A9%8D%E3%82%82%E3%82%8A%E3%81%8C%E9%AB%98%E3%81%99%E3%81%8E%E3%82%8B%E3%80%8D%E3%81%A8%E6%BF%80%E6%80%92%E3%81%AEIT%E9%83%A8%E9%95%B7%E3%80%81IT%E9%83%A8%E9%96%80%E3%81%AE%E5%95%8F%E9%A1%8C%E3%81%8C%E8%A6%8B%E3%81%88%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8B%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「SIerの見積もりが高すぎる」と激怒のIT部長、IT部門の問題が見えているか | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/3_%E3%80%8CSaaS%E3%81%AE%E6%AD%BB%E3%80%8D%E9%A8%92%E5%8B%95%E3%81%AB%E8%A6%8B%E3%82%8B%E3%80%81%E4%BC%81%E6%A5%AD%E5%90%91%E3%81%91IT%E3%81%AE%E9%9D%A2%E5%80%92%E3%81%95%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「SaaSの死」騒動に見る、企業向けITの面倒さ | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/3_%E8%87%AA%E6%B2%BB%E4%BD%93%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E3%80%8C%E4%B8%89%E5%B1%A4%E5%88%86%E9%9B%A2%E3%80%8D%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自治体ネットワークの「三層分離」を理解する | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/4_%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%83%BC%E6%8B%85%E5%BD%93%E8%80%85%E3%81%8C%E8%BB%A2%E8%81%B7%E3%82%92%E6%B1%BA%E6%84%8F%E3%80%81%E5%85%A8%E4%BD%93%E6%9C%80%E9%81%A9%E3%81%A8%E9%98%B2%E8%A1%9B%E7%AD%96%E3%81%AE%E3%82%B8%E3%83%AC%E3%83%B3%E3%83%9E%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    セキュリティー担当者が転職を決意、全体最適と防衛策のジレンマ | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IT/4_%E7%B7%8F%E5%8B%99%E7%9C%81%E3%81%8C%E8%87%AA%E6%B2%BB%E4%BD%93%E3%81%AB%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E5%AF%BE%E7%AD%96%E3%80%8C%E7%BE%A9%E5%8B%99%E5%8C%96%E3%80%8D%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    総務省が自治体にサイバー対策「義務化」 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sier
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sier
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sier/3_%E3%80%8CSIer%E3%81%AE%E8%A6%8B%E7%A9%8D%E3%82%82%E3%82%8A%E3%81%8C%E9%AB%98%E3%81%99%E3%81%8E%E3%82%8B%E3%80%8D%E3%81%A8%E6%BF%80%E6%80%92%E3%81%AEIT%E9%83%A8%E9%95%B7%E3%80%81IT%E9%83%A8%E9%96%80%E3%81%AE%E5%95%8F%E9%A1%8C%E3%81%8C%E8%A6%8B%E3%81%88%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8B%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「SIerの見積もりが高すぎる」と激怒のIT部長、IT部門の問題が見えているか | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    日立
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    日立
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%97%A5%E7%AB%8B/3_IT%E5%A4%A7%E6%89%8B4%E7%A4%BE%E3%83%88%E3%83%83%E3%83%97%E3%81%8C%E8%AA%9E%E3%82%8BSaaS%E3%81%AE%E6%AD%BB%E3%80%80%E5%AF%8C%E5%A3%AB%E9%80%9A%E3%80%8C%E7%8F%BE%E7%8A%B6%E5%9B%BA%E5%9F%B7%E3%81%A7%E3%81%AF%E6%88%90%E9%95%B7%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%80%8D%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT大手4社トップが語るSaaSの死 富士通「現状固執では成長できない」 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%97%A5%E7%AB%8B/3_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E9%81%8B%E7%94%A8%E3%81%ABAI%E3%82%92%E7%94%9F%E3%81%8B%E3%81%99%E3%81%9F%E3%82%81%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9%E3%80%81%E3%82%AB%E3%82%AE%E3%81%AF%E5%AE%89%E5%85%A8%E6%80%A7%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E6%95%B4%E5%82%99%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ネットワーク運用にAIを生かすための注意点、カギは安全性とデータ整備 | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%97%A5%E7%AB%8B/3_%E6%97%A5%E7%AB%8B%E3%81%8C%E5%85%A8%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B317%E4%B8%87%E5%8F%B0%E3%81%AB%E3%83%AC%E3%83%8E%E3%83%9C%E6%8E%A1%E7%94%A8%E3%80%81%E9%81%8B%E7%94%A8%E3%82%82%E3%82%A2%E3%82%A6%E3%83%88%E3%82%BD%E3%83%BC%E3%82%B9%20%EF%81%BC%20%E6%97%A5%E7%B5%8C%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AF%EF%BC%88xTECH%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    日立が全グループのパソコン17万台にレノボ採用、運用もアウトソース | 日経クロステック（xTECH）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#saas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        「業務機能を簡単に作れる」だけで、SaaSは死なない
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AIエージェントの正確性は誰が保証するのか
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2ページ目
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2ページ目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saas_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        多くの企業が同一のSaaSを利用することに価値がある
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        保守を社外に丸投げできるのが、クラウドの価値
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saaserp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SaaS型ERPは企業情報システムの「頭脳」に
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="saasit-xtech">「SaaSの死」騒動に見る、企業向けITの面倒さ | 日経クロステック（xTECH）</h1>
+<p>「『SaaS（ソフトウエア・アズ・ア・サービス）の死』について、どのような取材先を見つければ的確なコメントを得られるだろうか」。知り合いの経済誌記者からこんな相談を持ち掛けられた。同記者は普段、金利など金融関連の記事を担当しており、これまでSaaSなどIT関連の取材はほとんどしたことがないという。</p>
+<p>ところが同記者が所属する経済誌の方針で「全員の力を合わせてSaaSの死関連の記事を作ろう」となり、20年以上にわたって企業向けIT関連の取材をしてきた筆者に相談を寄せてきた。AI（人工知能）エージェントをはじめ、SaaSの死についても説明したが、普段からITになじみのない経済誌の記者にピンと来る話題ではなかったようだった。</p>
+<p>AIやSaaSになじみがない人まで興味を持つ「SaaSの死」。このキーワードが広く一般に広がっていたことに、筆者は驚いた。</p>
+<h4 id="saas">「業務機能を簡単に作れる」だけで、SaaSは死なない</h4>
+<p>SaaSの死は2026年前半にIT業界を最もにぎわせたキーワードの1つだろう。生成AIやAIエージェントの登場により、エンドユーザーが業務向けのソフトを簡単に開発できるようになり、SaaSのビジネスモデル、ひいてはSaaSベンダー自身も存亡の危機に立たされる――。これがSaaSの死の大まかな内容だ。</p>
+<p>SaaSの死の概念自体は、米Microsoft（マイクロソフト）のサティア・ナデラCEO（最高経営責任者）の発言などをきっかけに企業向けIT関係者の間で話題となるようになった。そして2026年1月、米Anthropic（アンソロピック）が業務向けのAIエージェント開発ツール「Claude Cowork」を発表したことで一気に現実味を帯びてきた格好だ。</p>
+<p>アンソロピックはClaude Cowork向けに、営業や法務といった業務別のプラグインを発表。アンソロピックの発表から数日で、米Salesforce（セールスフォース）や米ServiceNow（サービスナウ）といった、大手SaaSベンダーの株価が10％弱下落した。Claude Coworkの影響を受けたとの見方がある。</p>
+<p>[<img alt="" src="https://cdn-xtech.nikkei.com/atcl/nxt/column/18/00001/11666/top.jpg?__scale=w:200,h:150&amp;_sh=0e70210770" /></p>
+<p>関連記事</p>
+<p>米アンソロピックがMythos発表に続き「Cowork」一般提供　「SaaSの死」再燃</p>
+<p>米Anthropic（アンソロピック）は2026年4月9日（米国時間）、パソコン上の事務作業を自動化するAI（人工知能）エージェント「Claude Cowork」の一般提供を開始した。権限管理やセキ…</p>
+<p>2026.04.15](https://xtech.nikkei.com/atcl/nxt/column/18/00001/11666/?i_cid=nbpnxt_sied_blogcard)</p>
+<p>ただ企業向けIT関係者ならば、「注目企業のアンソロピックがClaude Cowork向けの業務向けプラグインを発表したからといって、SaaSがなくなることはないだろう」と直感的に思ったのではないか。企業情報システムの世界では、「欲しい機能を簡単に作れる」だけで、ユーザー企業が採用するわけではないからだ。</p>
+<h4 id="ai">AIエージェントの正確性は誰が保証するのか</h4>
+<p>繰り返しになるが、SaaSやオンプレミスなどの提供形態を問わず、企業情報システムで利用する業務アプリケーションは「必要な機能を実装したソフトウエアが完成すればそれでいい」という世界ではない。企業情報システムの世界は、とても面倒だ。</p>
+<p>企業情報システム固有の観点から「SaaSが死なない理由」を3つ挙げたい。</p>
+<p>SaaSが死なない理由の1つ目は、業務処理機能の正確さが、企業情報システムにとって何より重要な点だ。会計システムが処理を間違えたら経営を揺るがす決算訂正につながりかねない。人事システムで給与計算を間違えれば、企業は従業員から訴えられるかもしれない。</p>
+<p>そもそも会計処理に利用する業務アプリケーションでは、内部統制報告制度などにより「結果に間違いがないこと」の保証が求められる。ユーザー企業が開発したAIエージェントはエンドユーザーコンピューティング（EUC）の分類になるだろう。Excelのマクロと同じだ。この場合、米国でも日本でも内部統制の観点から、ユーザー企業はEUCで開発したアプリケーションの処理の正しさを監査人に示す必要がある。</p>
+<p>Claude CoworkのようなAIエージェント開発ツールで作ったアプリケーションの計算の正しさは、誰が保証するのだろうか。生成AIを利用することで、処理の過程がよりブラックボックス化される。処理が正確なことを示すAIエージェントを開発すればよいのだろうか。では、そのAIエージェントが正しいという保証は誰がするのか――。</p>
+<p>こういう面倒ごとを引き受けてくれるのがSaaSの役割の1つだ。SaaS型のERP（統合基幹業務システム）を提供するワークスアプリケーションズの場合、経費精算や請求処理などの領域で、生成AIの判断根拠を提示・可視化する機能を提供している。経費精算や請求書などの処理で生成AIを利用して「処理が誤り」だと判断した場合、「なぜ誤りと判断したか」を文書で提示する。これを基にユーザー企業や監査人が判断が妥当かを検証できるようにしている。</p>
+<p>SaaSベンダーは機能をアプリケーションに実装するだけでなく、こうした保証が必要なことを知っている。税理士や公認会計士などの専門家を抱えている企業も多い。ユーザー企業がAIエージェントをSaaSの代わりに利用するならば、処理の正確性を保証する方法まで考える必要がある。</p>
+<h2 id="2">2ページ目</h2>
+<h4 id="saas_1">多くの企業が同一のSaaSを利用することに価値がある</h4>
+<p>SaaSが死なない理由の2つ目は、企業情報システムでは「多くの企業が同一のアプリケーションを使う」ことが重要な局面があるからだ。SaaSの導入は単に処理を自動化するだけでなく、自社の業務を標準化・高度化する意味合いがある。</p>
+<p>SaaSには、日本中あるいは世界中の企業の業務を調べ尽くして開発された機能や業務プロセスが盛り込まれている。SaaSに合わせて自社の業務プロセスを変更することで、自社固有の無駄な業務や古い業務を一掃できるメリットがある。そもそもSaaSのような汎用的な業務アプリケーションを導入するのは、企業の非競争領域だ。そこを標準化・高度化することによる生産性向上のメリットは大きい。</p>
+<p>複数の企業が同じSaaSを利用することで業務プロセスが標準化されるメリットもある。複数の企業が同じプロセスで業務をこなしていれば、その業務そのものをBPO（ビジネス・プロセス・アウトソーシング）に出すことで、コスト低減効果を得やすくなる。独自の業務プロセスを採用している企業がBPOに出しても、オーダーメードのサービスになるためコスト削減効果を得るのは簡単ではない。</p>
+<p>1つ目の理由として挙げた「処理の正確性の保証」についても、多くの企業で同一製品を利用しているメリットが効く。大手SaaSを利用している場合、「多くの企業が採用している」という点で、その処理が正しいと保証されるとの考え方が一般的だからだ。「他の企業が利用しているSaaSをカスタマイズなく利用しているのならば、計算結果に問題はないですね」と監査人は考える。</p>
+<h4 id="_1">保守を社外に丸投げできるのが、クラウドの価値</h4>
+<p>3つ目の理由は保守だ。法規制が変わったとき、誰がその法規制に対応した機能を開発し、提供してくれるのだろうか。SaaSがカバーすることの多い会計や人事といったバックオフィス業務は、法規制の変更の影響を受けやすい業務だ。</p>
+<p>「新しい会計基準が適用になる」「社会保障の制度が変わる」「法規制が変わったことで税務など周辺システムとのデータ受け渡しを変更する」――。SaaSベンダーがこれまで担ってきたこうした法規制の変更に対する作業を、アンソロピックが担ってくれるのだろうか。将来的には法規制の要件を読み解き、保守を担当してくれるAIエージェントが登場しそうだが、1つ目に指摘した保証の観点から、完全自動化は難しいだろう。</p>
+<p>セキュリティーに関する機能も同様だ。会計や人事など業務システムに脆弱性があった場合、SaaSであれば提供元のベンダーが対処する。しかし自社でAIエージェントを開発した場合、AIエージェントに脆弱性があったり、暴走したりした場合は、自ら対応しなければならない。</p>
+<p>クラウドが登場した当時に散々いわれていたが、SaaSには自社が担うべき保守を社外に委ねられるというメリットがある。保守を自社で担えるならば、Claude Coworkのようなサービスを利用して、自社が求める業務処理機能を持ったAIエージェントを開発してもよいかもしれない。</p>
+<h4 id="saaserp">SaaS型ERPは企業情報システムの「頭脳」に</h4>
+<p>ここまで見てきたのは、業務処理の提供というSaaSの一番重要な機能とは関係のない、SaaSが死なない理由だ。旧来の企業情報システムの慣習だったり、企業情報システムならではの問題に由来したりする要因である。</p>
+<p>では技術面から見た場合、SaaSはAIエージェントに代替され、なくなってしまうのだろうか。SaaSの死を巡る議論では、「AIエージェントがSaaSのUI（ユーザーインターフェース）となるため、SaaSは今のビジネスモデルを維持できない」といった技術的な論点が目立った。</p>
+<p>「AIが既存のSaaSベンダーを脅かしていることは確かだ」。SaaS型ERPを提供する米Workday（ワークデイ）のロブ・エンスリン プレジデント兼CCO（最高商務責任者）はこう話す。一方で、「データと業務プロセスを押さえている我々のような業務領域のSaaSは、AIによってより優位になった側面もある」（同）と強調する。「当社は既にAIファーストを打ち出しており、積極的に最新技術を取り込んでいく」（同）姿勢だ。</p>
+<p>独SAPのクリスチャン・クラインCEO（最高経営責任者）もSaaSの死を全く意に介していない。2026年5月に米国で開催された同社の年次カンファレンスで、SAPの主力製品であるSaaS型ERPについて、「ERPは企業の脳だ」と表現。AI時代に「より重要になる」と強調した。</p>
+<p><a href="/atcl/nxt/column/18/00138/052202026/?SS=imgview&amp;FD=-552151630"><img alt="独SAPの年次カンファレンスで講演する独SAPのクリスチャン・クラインCEO（最高経営責任者）" src="https://cdn-xtech.nikkei.com/atcl/nxt/column/18/00138/052202026/photo1.jpg?__scale=w:680,h:425&amp;_sh=07a0570d50" /></a></p>
+<p>独SAPの年次カンファレンスで講演する独SAPのクリスチャン・クラインCEO（最高経営責任者）</p>
+<p>（出所：独SAPの動画を日経クロステックがキャプチャー）</p>
+<p>SAPはユーザー企業へ「すぐに業務で利用できるAIエージェント」（クラインCEO）の提供を始めている。クラインCEOは「AIエージェントが、業務アプリケーションに求められる正確性などを備えた上で、動作するためにはERPのデータが欠かせない」と説明。ERPに蓄積したデータこそが、AIエージェントが業務システムの一部として振る舞えるようにする「コンテキスト（文脈）」を与えるものだと強調し、ERPの重要性を訴えた。</p>
+<p>AI関連の技術の進化が企業情報システムにまつわる面倒な要件を打ち破り、SaaSの死を伴う新たな業務アプリケーションのあり方が求められるようになるのか。技術進化と企業情報システムのあり方の両面から、その変化を見届けることが欠かせない。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
