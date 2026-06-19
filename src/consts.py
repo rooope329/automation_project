@@ -1,8 +1,8 @@
-import os
+from pathlib import Path
 DOWNLOAD_URL = "https://xtech.nikkei.com/"
-dir_path = os.path.dirname(os.path.abspath(__file__))
-BASE_OUTPUT_PATH = os.path.join(dir_path, "data")
-CSV_OUTPUT_PATH = os.path.join(BASE_OUTPUT_PATH, "weekly_trends.csv")
+dir_path = Path(__file__).parent
+BASE_OUTPUT_PATH = dir_path / "data"
+CSV_OUTPUT_PATH = BASE_OUTPUT_PATH / "weekly_trends.csv"
 MAX_RETRIES = 3
 RETRY_INTERVAL = 5  # seconds
 NIKKEI = "日経xTECH"

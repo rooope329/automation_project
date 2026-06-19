@@ -8,8 +8,29 @@ from typing import List
 import pandas as pd
 import traceback
 import os
+import requests
+import os
+from pathlib import Path
 import sys
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+def send_line_api(message):
+    url = "https://api.line.me/v2/bot/message/broadcast"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {os.getenv('LINE_CHANNEL_ACCESS_TOKEN')}"
+    }
+    data = {
+        "to": "USER_ID",
+        "messages": [
+            {
+                "type": "text",
+                "text": message
+            }
+        ]
+    }
+    response = requests.post(url, headers=headers, json=data)
+    return response.status_code
 
 def get_date(start_offset_days: int, duratuion_days:int) -> List[str:]:
     '''
@@ -31,7 +52,7 @@ def main(OUTPUT_PATH) -> None:
   '''
   # 1：ダウンロード処理
   # 日付のリストを取得
-  date_list = get_date(0,4)
+  date_list = get_date(0,7)
   #ダウンロード処理
   downloads = download_main(date_list, OUTPUT_PATH)
   if not downloads:
@@ -57,13 +78,33 @@ def main(OUTPUT_PATH) -> None:
   old_process_csv = pd.read_csv(CSV_OUTPUT_PATH, encoding="utf-8", header=0)
   new_process_csv = pd.DataFrame(collected_date_list)
 
-  #2つをconcatして、上書き保存
+  # 2つをconcatして、上書き保存
   process_csv = pd.concat([old_process_csv, new_process_csv], ignore_index=True)
   process_csv.to_csv(CSV_OUTPUT_PATH, index=False, encoding="utf-8")
   print(f"CSV出力完了：{CSV_OUTPUT_PATH}")
   print(f"{min(date_list)}から{max(date_list)}までのデータを収集しました")
 
-  #dataフォルダ内の日経xTECH内のフォルダを時系列順にsortする。
+  # dataフォルダ内の日経xTECH内のフォルダを時系列順にsortする。
+  # dataフォルダ以下にある、ニュース記事のフォルダに存在する.pagesファイルを更新して、日付ごとにsortする。
+  # dataフォルダ以下のニュースメディアフォルダ（日経xTECHなど）をすべて取得
+  news_site_folders = [p for p in BASE_OUTPUT_PATH.glob("*") if p.is_dir()]
+
+  for news_site_folder in news_site_folders:
+    # .pages などのファイルを除外して、日付フォルダだけを取得し降順ソート
+    news_date_folders = sorted([p for p in news_site_folder.glob("*") if p.is_dir()], reverse=True)
+    
+    # 日付の文字列だけをリストに格納する
+    news_date_list = [folder.name for folder in news_date_folders]
+
+    pages_file_path = news_site_folder / ".pages"
+    
+    # .pagesファイルを上書きして更新する
+    with open(pages_file_path, "w", encoding="utf-8") as f:
+        f.write(f"arrange: {news_date_list}\n")
+      
+   
+  send_message = f"{min(date_list)}から{max(date_list)}までのニュース記事収集が完了しました。"
+  send_line_api(send_message)
 
 def execute():
   try:
@@ -73,10 +114,3 @@ def execute():
 
 if __name__ == "__main__":
    execute()
-
-
-
-  
-
-
-

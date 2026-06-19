@@ -169,7 +169,7 @@ def download_article_content(context, target, page_num, article_num, keyword):
             target_div.decompose()
 
         clean_summary = str(cleaned_summary_html)
-        full_markdown_content = f"# {article_title}\n\n{markdownify(clean_summary)}"
+        full_markdown_content = f"{markdownify(clean_summary)}"
         
         #　次のタブがある場合の処理
         '''
@@ -224,13 +224,7 @@ def download_article_content(context, target, page_num, article_num, keyword):
 
                 clean_summary = str(cleaned_summary_html)
                 full_markdown_content += f"\n\n## {tabpage_num}ページ目\n\n{markdownify(clean_summary)}"
-
-        # 保存先ディレクトリを作成し、書き込み
-        os.makedirs(output_dir, exist_ok=True)
         article_path = os.path.join(output_dir, f'{article_title}.md')
-        
-        with open(article_path, 'w', encoding='utf-8') as f:
-            f.write(full_markdown_content)
             
         return {
             'keyword': keyword,
@@ -239,6 +233,7 @@ def download_article_content(context, target, page_num, article_num, keyword):
             'article_num': article_num,
             'article_path': article_path,
             'article_title': article_title,
+            'article_content': full_markdown_content,
             'search_kind': NIKKEI
         }
         
@@ -276,7 +271,6 @@ def download(target_dates, output_path):
     nikkei_output_path = os.path.join(output_path, NIKKEI)
     with sync_playwright() as p:
         page = get_session(p)
-        
         try:
             page = login(page)
         except Exception as e:
@@ -292,11 +286,10 @@ def download(target_dates, output_path):
             print(f"{keyword} の検索成功。ダウンロードを開始します。")
             page = search_page
             total_pages = get_target_page_count(page, keyword)
-            
             for page_num in range(1, total_pages + 1):
                 print(f"{keyword} のダウンロード中：{page_num}/{total_pages}")
-                page.wait_for_timeout(1000)
                 
+                page.wait_for_timeout(1000)
                 # 各ページごとに、downloads処理を実施
                 page, paths, should_break = process_single_page(page, target_dates, nikkei_output_path, page_num, keyword)
                 downloads_path_list.extend(paths)

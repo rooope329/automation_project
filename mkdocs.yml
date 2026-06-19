@@ -1,42 +1,26 @@
 site_name: ITニュース一覧ページ
+site_url: https://github.com/rooope329/automation_project
+repo_url: https://github.com/rooope329/automation_project
+repo_name: rooope329/automation_project  # リンクの横に表示されるテキスト
 docs_dir: src/data
 
 theme:
   name: material
-  language: ja
-  features:
-    - navigation.top          # スマホ画面で一瞬で上に戻るボタンを表示
-    - search.suggest          # 検索窓で文字を打った時に予測を出す
-    - search.highlight        # 検索したキーワードを記事内でピカッと光らせる
-    - navigation.tabs         # 上部に大きな「タブ」を作り、画面を広く使う
-    - toc.integrate           # 右側にある「目次」を左メニューに合体させてスマホで見やすくする
-
- # カラーパレット
+  language: ja  
   palette:
-    # ☀️ ライトモード（お昼用：白ベースにオシャレなティールグリーン）
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: ダークモードに切り替え
+    - primary: indigo
+      accent: light blue
+  featres:
+    - navigation.sections
 
-    # 🌙 ダークモード（夜用：目に優しい黒ベース）
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: teal
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: ライトモードに切り替え
-
-extra_css:
-  - stylesheets/custom.css
-
-# 🔄 メニューの並び順を「新しい順（降順）」にするための自動ソートプラグイン
+#  pluginsの機能設定
 plugins:
-  - search
+  - search:
+      lang: ja
   - awesome-pages:
       filename: .pages
-      collapse_single_pages: false
+      collapse_single_pages: False
+
+extra_css:
+  - stylesheets/extra.css
+
